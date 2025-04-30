@@ -11,7 +11,7 @@
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="9_usvor"]
 [ext_resource type="Script" path="res://scripts/states/idle.gd" id="10_ypttp"]
 [ext_resource type="Script" path="res://scripts/states/walk.gd" id="11_wurt2"]
-[ext_resource type="Script" path="res://scripts/states/attack_1.gd" id="12_1rwaq"]
+[ext_resource type="Script" path="res://scripts/states/attack.gd" id="12_1rwaq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w7ndq"]
 atlas = ExtResource("1_x66me")
@@ -37,27 +37,27 @@ region = Rect2(400, 0, 100, 100)
 atlas = ExtResource("1_x66me")
 region = Rect2(500, 0, 100, 100)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8j2wn"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1japr"]
 atlas = ExtResource("2_a6ek5")
 region = Rect2(0, 0, 100, 100)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_micc1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_il4kf"]
 atlas = ExtResource("2_a6ek5")
 region = Rect2(100, 0, 100, 100)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qo7dd"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_njiep"]
 atlas = ExtResource("2_a6ek5")
 region = Rect2(200, 0, 100, 100)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dnjxr"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_5d7m3"]
 atlas = ExtResource("2_a6ek5")
 region = Rect2(300, 0, 100, 100)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_itbyh"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_p13rl"]
 atlas = ExtResource("2_a6ek5")
 region = Rect2(400, 0, 100, 100)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2e77e"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_xnfch"]
 atlas = ExtResource("2_a6ek5")
 region = Rect2(500, 0, 100, 100)
 
@@ -208,30 +208,30 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack_1",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8j2wn")
+"texture": SubResource("AtlasTexture_1japr")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_micc1")
+"texture": SubResource("AtlasTexture_il4kf")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qo7dd")
+"texture": SubResource("AtlasTexture_njiep")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_dnjxr")
+"texture": SubResource("AtlasTexture_5d7m3")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_itbyh")
+"texture": SubResource("AtlasTexture_p13rl")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2e77e")
+"texture": SubResource("AtlasTexture_xnfch")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack_2",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -261,9 +261,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_rfuwh")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack_3",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -278,7 +278,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_knu6x")
 }],
-"loop": true,
+"loop": false,
 "name": &"death",
 "speed": 5.0
 }, {
@@ -295,7 +295,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_a1f0m")
 }],
-"loop": true,
+"loop": false,
 "name": &"hurt",
 "speed": 5.0
 }, {
@@ -320,7 +320,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -349,7 +349,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0qst4"]
@@ -360,8 +360,8 @@ script = ExtResource("1_x3k6p")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_b6fsj")
-animation = &"attack_1"
-frame = 5
+animation = &"attack_3"
+frame = 8
 frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -379,6 +379,17 @@ script = ExtResource("11_wurt2")
 
 [node name="Attack1" type="Node" parent="StateMachine"]
 script = ExtResource("12_1rwaq")
+anim = "attack_1"
+next_state = "Attack2"
+
+[node name="Attack2" type="Node" parent="StateMachine"]
+script = ExtResource("12_1rwaq")
+anim = "attack_2"
+next_state = "Attack3"
+
+[node name="Attack3" type="Node" parent="StateMachine"]
+script = ExtResource("12_1rwaq")
+anim = "attack_3"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3.5, 3.5)
