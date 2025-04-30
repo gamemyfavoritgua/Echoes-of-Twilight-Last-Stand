@@ -8,10 +8,12 @@ func enter(previous_state_path: String, data := {}) -> void:
     
 ## Called by the state machine on the engine's main loop tick.
 func physics_update(_delta: float) -> void:
-    var move_left = Input.is_action_pressed("move_left")
-    var move_right = Input.is_action_pressed("move_right")
+    var input_vector := Vector2(
+        Input.get_action_strength("move_right") - Input.get_action_strength("move_left"),
+        Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
+    )
     
-    if move_left or move_right:
+    if input_vector != Vector2.ZERO:
         finished.emit(WALK)
     
     if Input.is_action_just_pressed("attack"):
