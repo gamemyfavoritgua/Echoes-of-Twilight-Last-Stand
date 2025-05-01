@@ -7,7 +7,7 @@ var attack_buffered := false
 
 ## Called by the state machine when receiving unhandled input events.
 func handle_input(_event: InputEvent) -> void:
-     if _event.is_action_pressed("attack"):
+    if _event.is_action_pressed("attack"):
         attack_buffered = true
 
 ## Called by the state machine upon changing the active state. The `data` parameter
