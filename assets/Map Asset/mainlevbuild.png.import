@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2b6ifrnr5pn3"
-path="res://.godot/imported/mainlevbuild.png-c9586b8f6c32f189553b4ea26300bdbc.ctex"
+path="res://.godot/imported/mainlevbuild.png-2c53c22df6d8d1542e6a5237db2888bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Map Asset/mainlevbuild.png"
-dest_files=["res://.godot/imported/mainlevbuild.png-c9586b8f6c32f189553b4ea26300bdbc.ctex"]
+source_file="res://Assets/Map Asset/mainlevbuild.png"
+dest_files=["res://.godot/imported/mainlevbuild.png-2c53c22df6d8d1542e6a5237db2888bc.ctex"]
 
 [params]
 
