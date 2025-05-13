@@ -289,7 +289,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_u7sji"]
 radius = 64.0
 
-[node name="Enemy" type="CharacterBody2D"]
+[node name="Enemy" type="CharacterBody2D" groups=["enemy"]]
 collision_layer = 2
 platform_floor_layers = 4294967294
 script = ExtResource("1_oum07")
@@ -305,6 +305,7 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="AreaChase" type="Area2D" parent="." node_paths=PackedStringArray("target_node")]
+collision_layer = 0
 script = ExtResource("8_05i6e")
 target_node = NodePath("../StateMachine/Idle")
 
