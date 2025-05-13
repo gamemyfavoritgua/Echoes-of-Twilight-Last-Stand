@@ -14,4 +14,8 @@ func _on_body_entered_hit(body: Node):
         var direction_to_enemy = (enemy_position - player_position).normalized()
         
         if direction_to_enemy.dot(player.direction) > 0:
-            print('ENEMY TAKEN DAMAGE')
+            # Get the state machine from the enemy
+            var state_machine = body.get_node("StateMachine")
+            if state_machine:
+                # Transition the enemy to the hurt state
+                state_machine._transition_to_next_state("Hurt")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://x0jndsnsbqj0"]
+[gd_scene load_steps=50 format=3 uid="uid://x0jndsnsbqj0"]
 
 [ext_resource type="Texture2D" uid="uid://dx446eke0ukk4" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Attack01.png" id="1_nxabk"]
 [ext_resource type="Script" path="res://scripts/enemy/goblin.gd" id="1_oum07"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="8_tyxwb"]
 [ext_resource type="Script" path="res://scripts/enemy/states/idle.gd" id="9_or4xy"]
 [ext_resource type="Script" path="res://scripts/enemy/states/walk.gd" id="10_w0uja"]
+[ext_resource type="Script" path="res://scripts/enemy/states/hurt.gd" id="12_lbbag"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jwxh4"]
 size = Vector2(15, 19)
@@ -172,7 +173,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bmngw")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack_1",
 "speed": 10.0
 }, {
@@ -195,7 +196,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_rurkg")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack_2",
 "speed": 10.0
 }, {
@@ -212,7 +213,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5fgcn")
 }],
-"loop": true,
+"loop": false,
 "name": &"death",
 "speed": 10.0
 }, {
@@ -229,7 +230,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_m2t1h")
 }],
-"loop": true,
+"loop": false,
 "name": &"hurt",
 "speed": 10.0
 }, {
@@ -320,3 +321,6 @@ script = ExtResource("9_or4xy")
 
 [node name="Walk" type="Node" parent="StateMachine"]
 script = ExtResource("10_w0uja")
+
+[node name="Hurt" type="Node" parent="StateMachine"]
+script = ExtResource("12_lbbag")
