@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dq2sumkymjrtc"]
 
-[ext_resource type="Texture2D" uid="uid://b2b6ifrnr5pn3" path="res://assets/Map Asset/mainlevbuild.png" id="1_pdpvk"]
+[ext_resource type="Texture2D" uid="uid://b2b6ifrnr5pn3" path="res://Assets/Map Asset/mainlevbuild.png" id="1_pdpvk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ie3x0"]
 texture = ExtResource("1_pdpvk")
@@ -1034,7 +1034,8 @@ texture = ExtResource("1_pdpvk")
 23:23/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_fp3gb"]
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 3
+physics_layer_0/collision_mask = 3
 sources/0 = SubResource("TileSetAtlasSource_ie3x0")
 
 [node name="TileMap1" type="TileMap"]
