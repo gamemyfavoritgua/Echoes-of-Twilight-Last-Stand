@@ -13,12 +13,15 @@ func handle_input(_event: InputEvent) -> void:
 ## Called by the state machine upon changing the active state. The `data` parameter
 ## is a dictionary with arbitrary data the state can use to initialize itself.
 func enter(previous_state_path: String, data := {}) -> void:
+    player.attack_area.monitoring = true
     player.animation_player.play(anim)
 
 ## Called by the state machine on the engine's physics update tick.
 func physics_update(_delta: float) -> void:
     if player.animation_player.is_playing():
         return
+        
+    player.attack_area.monitoring = false    
         
     var input_direction_x := Input.get_axis("move_left", "move_right")
     

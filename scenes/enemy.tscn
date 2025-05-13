@@ -1,11 +1,17 @@
-[gd_scene load_steps=43 format=3 uid="uid://x0jndsnsbqj0"]
+[gd_scene load_steps=50 format=3 uid="uid://x0jndsnsbqj0"]
 
 [ext_resource type="Texture2D" uid="uid://dx446eke0ukk4" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Attack01.png" id="1_nxabk"]
+[ext_resource type="Script" path="res://scripts/enemy/goblin.gd" id="1_oum07"]
 [ext_resource type="Texture2D" uid="uid://dhpct2mrrbb4" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Idle.png" id="1_rjw8s"]
 [ext_resource type="Texture2D" uid="uid://btuls61c2k8ym" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Attack02.png" id="2_2aakp"]
 [ext_resource type="Texture2D" uid="uid://dqwsn8yq7rb3r" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Hurt.png" id="3_mai63"]
 [ext_resource type="Texture2D" uid="uid://d3nwafmd5cd23" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Death.png" id="3_ycu7n"]
 [ext_resource type="Texture2D" uid="uid://m5mti0vcygxe" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Walk.png" id="5_qj383"]
+[ext_resource type="Script" path="res://scripts/enemy/area_trigger.gd" id="8_05i6e"]
+[ext_resource type="Script" path="res://scripts/state_machine.gd" id="8_tyxwb"]
+[ext_resource type="Script" path="res://scripts/enemy/states/idle.gd" id="9_or4xy"]
+[ext_resource type="Script" path="res://scripts/enemy/states/walk.gd" id="10_w0uja"]
+[ext_resource type="Script" path="res://scripts/enemy/states/hurt.gd" id="12_lbbag"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jwxh4"]
 size = Vector2(15, 19)
@@ -167,7 +173,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bmngw")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack_1",
 "speed": 10.0
 }, {
@@ -190,7 +196,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_rurkg")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack_2",
 "speed": 10.0
 }, {
@@ -207,7 +213,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5fgcn")
 }],
-"loop": true,
+"loop": false,
 "name": &"death",
 "speed": 10.0
 }, {
@@ -224,7 +230,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_m2t1h")
 }],
-"loop": true,
+"loop": false,
 "name": &"hurt",
 "speed": 10.0
 }, {
@@ -281,7 +287,13 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="Enemy" type="CharacterBody2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_u7sji"]
+radius = 64.0
+
+[node name="Enemy" type="CharacterBody2D" groups=["enemy"]]
+collision_layer = 2
+platform_floor_layers = 4294967294
+script = ExtResource("1_oum07")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 0.5)
@@ -292,3 +304,23 @@ scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_6jwcx")
 animation = &"idle"
 autoplay = "idle"
+
+[node name="AreaChase" type="Area2D" parent="." node_paths=PackedStringArray("target_node")]
+collision_layer = 0
+script = ExtResource("8_05i6e")
+target_node = NodePath("../StateMachine/Idle")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaChase"]
+shape = SubResource("CircleShape2D_u7sji")
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("8_tyxwb")
+
+[node name="Idle" type="Node" parent="StateMachine"]
+script = ExtResource("9_or4xy")
+
+[node name="Walk" type="Node" parent="StateMachine"]
+script = ExtResource("10_w0uja")
+
+[node name="Hurt" type="Node" parent="StateMachine"]
+script = ExtResource("12_lbbag")
