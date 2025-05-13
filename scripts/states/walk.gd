@@ -14,6 +14,7 @@ func physics_update(_delta: float) -> void:
 
     if input_vector.length() > 0:
         input_vector = input_vector.normalized()
+        player.direction = input_vector
     
     player.velocity = input_vector * player.speed
     player.move_and_slide()

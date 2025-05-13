@@ -374,10 +374,11 @@ sprite_frames = SubResource("SpriteFrames_b6fsj")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AttackRange" type="Area2D" parent="."]
+[node name="AttackRange" type="Area2D" parent="." node_paths=PackedStringArray("player")]
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("9_hkh6a")
+player = NodePath("..")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange"]
 shape = SubResource("CircleShape2D_ga8s7")
