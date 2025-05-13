@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1kr8on32hfxx"
-path="res://.godot/imported/torch_1.png-5018f7a86fa0f4be93e602bdac6872d1.ctex"
+path="res://.godot/imported/torch_1.png-c082f07fd9deb12abea970cb70e851e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Map Asset/torch_1.png"
-dest_files=["res://.godot/imported/torch_1.png-5018f7a86fa0f4be93e602bdac6872d1.ctex"]
+source_file="res://assets/Map Asset/torch_1.png"
+dest_files=["res://.godot/imported/torch_1.png-c082f07fd9deb12abea970cb70e851e7.ctex"]
 
 [params]
 
