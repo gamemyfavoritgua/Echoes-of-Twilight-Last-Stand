@@ -1,0 +1,80 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbsvj5c8pkypu"]
+
+[ext_resource type="Texture2D" uid="uid://c5tksqd7gdxet" path="res://assets/Picture Asset/maIn menu.png" id="1_gheg4"]
+[ext_resource type="FontFile" uid="uid://b7pjd3bk5ipv1" path="res://assets/Font Asset/dwarvenaxe-bb-w00-regular.ttf" id="2_w4ox0"]
+[ext_resource type="FontFile" uid="uid://fnpxkalvu07v" path="res://assets/Font Asset/DUNGRG__.TTF" id="3_or6f5"]
+
+[node name="MarginContainer" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_gheg4")
+expand_mode = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 25.0
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6699, 0.670298, 0.524971, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("2_w4ox0")
+theme_override_font_sizes/font_size = 125
+text = "Echoes of Twilight:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.629582, 0.502947, 0.48325, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("2_w4ox0")
+theme_override_font_sizes/font_size = 100
+text = "Last Stand"
+horizontal_alignment = 1
+
+[node name="Placeholder" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+
+[node name="LinkButton" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_or6f5")
+theme_override_font_sizes/font_size = 62
+text = "                                     Start Game"
+underline = 1
+
+[node name="LinkButton2" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_or6f5")
+theme_override_font_sizes/font_size = 62
+text = "                                         Tutorial"
+underline = 1
+
+[node name="LinkButton3" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_or6f5")
+theme_override_font_sizes/font_size = 62
+text = "                                            Credit"
+underline = 1
+
+[node name="LinkButton4" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_or6f5")
+theme_override_font_sizes/font_size = 62
+text = "                                              Exit"
+underline = 1
