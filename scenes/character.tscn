@@ -13,6 +13,7 @@
 [ext_resource type="Script" path="res://scripts/states/idle.gd" id="10_ypttp"]
 [ext_resource type="Script" path="res://scripts/states/walk.gd" id="11_wurt2"]
 [ext_resource type="Script" path="res://scripts/states/attack.gd" id="12_1rwaq"]
+[ext_resource type="PackedScene" uid="uid://e0ce8ldkh148" path="res://scenes/twilight.tscn" id="13_gajw7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0qst4"]
 size = Vector2(17, 22)
@@ -405,6 +406,8 @@ next_state = "Attack3"
 [node name="Attack3" type="Node" parent="StateMachine"]
 script = ExtResource("12_1rwaq")
 anim = "attack_3"
+
+[node name="Twilight" parent="." instance=ExtResource("13_gajw7")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3.5, 3.5)
