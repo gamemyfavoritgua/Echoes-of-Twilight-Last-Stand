@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://e0ce8ldkh148"]
+
+[ext_resource type="Script" path="res://scripts/twilight.gd" id="1_mtnr6"]
+
+[node name="Twilight" type="Node"]
+script = ExtResource("1_mtnr6")
+
+[node name="TwilightProgress" type="ProgressBar" parent="."]
+offset_right = 4.0
+offset_bottom = 27.0
+max_value = 10.0
+
+[node name="FillTimer" type="Timer" parent="."]
+
+[node name="DrainTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="FillTimer" to="." method="_on_fill_timer_timeout"]
+[connection signal="timeout" from="DrainTimer" to="." method="_on_drain_timer_timeout"]

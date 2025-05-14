@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dwsmiqh35o824"]
+[gd_scene load_steps=7 format=3 uid="uid://c7gloecpsaljj"]
 
 [ext_resource type="PackedScene" uid="uid://dq2sumkymjrtc" path="res://scenes/tile_map.tscn" id="1_t0q7l"]
 [ext_resource type="Texture2D" uid="uid://b2b6ifrnr5pn3" path="res://assets/Map Asset/mainlevbuild.png" id="2_e3aax"]
-[ext_resource type="PackedScene" uid="uid://ddouy4ko46twc" path="res://scenes/wizard.tscn" id="3_b740x"]
+[ext_resource type="PackedScene" uid="uid://br76jtkpqe5cw" path="res://scenes/wizard.tscn" id="3_b740x"]
 [ext_resource type="PackedScene" uid="uid://x0jndsnsbqj0" path="res://scenes/enemy.tscn" id="4_tgdqi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n6anm"]
