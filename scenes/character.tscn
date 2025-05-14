@@ -371,8 +371,10 @@ shape = SubResource("RectangleShape2D_0qst4")
 z_index = 1
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_b6fsj")
-animation = &"idle"
+animation = &"attack_2"
 autoplay = "idle"
+frame = 5
+frame_progress = 1.0
 
 [node name="AttackRange" type="Area2D" parent="." node_paths=PackedStringArray("player")]
 collision_layer = 0
