@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dqoghchllvxmu"
+path="res://.godot/imported/arrow-wood-impact-146418.mp3-0807df2675e6956421347f89352fccc5.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound Assets/SFX/Character/arrow-wood-impact-146418.mp3"
+dest_files=["res://.godot/imported/arrow-wood-impact-146418.mp3-0807df2675e6956421347f89352fccc5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://bdy7s43p5b2co"]
+[gd_scene load_steps=59 format=3 uid="uid://bdy7s43p5b2co"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_x3k6p"]
 [ext_resource type="Texture2D" uid="uid://cpbwuoi7jiwvi" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier-Attack01.png" id="2_xr6pp"]
@@ -12,6 +12,9 @@
 [ext_resource type="Script" path="res://scripts/states/idle.gd" id="10_ypttp"]
 [ext_resource type="Script" path="res://scripts/states/walk.gd" id="11_wurt2"]
 [ext_resource type="Script" path="res://scripts/states/attack.gd" id="12_1rwaq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ayu6"]
+size = Vector2(20, 23)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0qst4"]
 size = Vector2(17, 22)
@@ -357,6 +360,12 @@ animations = [{
 
 [node name="Character" type="CharacterBody2D"]
 script = ExtResource("1_x3k6p")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_1ayu6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 z_index = 1

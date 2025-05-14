@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1r34ihcjq78k"]
+
+[ext_resource type="Script" path="res://scripts/rune_health.gd" id="1_8rikw"]
+[ext_resource type="Texture2D" uid="uid://cwdpybosp4ee5" path="res://assets/Map Asset/candleA_01.png" id="1_vkvxa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o457f"]
+
+[node name="Rune_healt" type="Node2D"]
+script = ExtResource("1_8rikw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_vkvxa")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_o457f")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
