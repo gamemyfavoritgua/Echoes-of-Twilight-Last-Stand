@@ -55,7 +55,7 @@ theme_override_font_sizes/font_size = 40
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_or6f5")
 theme_override_font_sizes/font_size = 62
-text = "                                      New Game"
+text = "                                     Start Game"
 underline = 1
 
 [node name="LinkButton2" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
