@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhmkvgewu0aht"
-path="res://.godot/imported/Priest-Attack_Effect.png-8e82e65f3274eb47ac2158b568b15b6d.ctex"
+path="res://.godot/imported/Priest-Attack_Effect.png-53c905799fc868e76a6a32da16761aff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Priest/Priest(Split Effects)/Priest-Attack_Effect.png"
-dest_files=["res://.godot/imported/Priest-Attack_Effect.png-8e82e65f3274eb47ac2158b568b15b6d.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Priest/Priest(Split Effects)/Priest-Attack_Effect.png"
+dest_files=["res://.godot/imported/Priest-Attack_Effect.png-53c905799fc868e76a6a32da16761aff.ctex"]
 
 [params]
 

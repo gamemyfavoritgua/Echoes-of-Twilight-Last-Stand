@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl7t4hng1bmjd"
-path="res://.godot/imported/Werebear.png-ee9180b639b37a71410a3564500f3259.ctex"
+path="res://.godot/imported/Werebear.png-1435c3c955e79fe7ef550e43259e74ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Werebear/Werebear(Split Effects)/Werebear.png"
-dest_files=["res://.godot/imported/Werebear.png-ee9180b639b37a71410a3564500f3259.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Werebear/Werebear(Split Effects)/Werebear.png"
+dest_files=["res://.godot/imported/Werebear.png-1435c3c955e79fe7ef550e43259e74ab.ctex"]
 
 [params]
 

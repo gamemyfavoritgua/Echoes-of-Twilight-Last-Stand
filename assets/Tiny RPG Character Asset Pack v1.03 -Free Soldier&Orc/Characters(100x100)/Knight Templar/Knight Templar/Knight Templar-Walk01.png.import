@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwwxmso4uq0x1"
-path="res://.godot/imported/Knight Templar-Walk01.png-8aaf6086bb9d17d8f174bb9fca4c8af0.ctex"
+path="res://.godot/imported/Knight Templar-Walk01.png-be6c3a25f436d671aad5b0ee1f62a2a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight Templar/Knight Templar/Knight Templar-Walk01.png"
-dest_files=["res://.godot/imported/Knight Templar-Walk01.png-8aaf6086bb9d17d8f174bb9fca4c8af0.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight Templar/Knight Templar/Knight Templar-Walk01.png"
+dest_files=["res://.godot/imported/Knight Templar-Walk01.png-be6c3a25f436d671aad5b0ee1f62a2a2.ctex"]
 
 [params]
 

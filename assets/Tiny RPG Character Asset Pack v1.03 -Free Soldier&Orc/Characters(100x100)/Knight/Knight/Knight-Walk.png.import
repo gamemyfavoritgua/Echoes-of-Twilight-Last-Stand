@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://15kug3nant4l"
-path="res://.godot/imported/Knight-Walk.png-b3c58657461bed22fe40292620ff71b1.ctex"
+path="res://.godot/imported/Knight-Walk.png-4a9b0e835637de5e7c57712da345fff9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight/Knight/Knight-Walk.png"
-dest_files=["res://.godot/imported/Knight-Walk.png-b3c58657461bed22fe40292620ff71b1.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight/Knight/Knight-Walk.png"
+dest_files=["res://.godot/imported/Knight-Walk.png-4a9b0e835637de5e7c57712da345fff9.ctex"]
 
 [params]
 

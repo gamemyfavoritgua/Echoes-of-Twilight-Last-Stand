@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b7pjd3bk5ipv1"
-path="res://.godot/imported/dwarvenaxe-bb-w00-regular.ttf-09683ad348e638c8b1ae9dd6185a3790.fontdata"
+path="res://.godot/imported/dwarvenaxe-bb-w00-regular.ttf-3ab673ef620319ae9c8d9dbf859ebb61.fontdata"
 
 [deps]
 
-source_file="res://assets/Font Asset/dwarvenaxe-bb-w00-regular.ttf"
-dest_files=["res://.godot/imported/dwarvenaxe-bb-w00-regular.ttf-09683ad348e638c8b1ae9dd6185a3790.fontdata"]
+source_file="res://Assets/Font Asset/dwarvenaxe-bb-w00-regular.ttf"
+dest_files=["res://.godot/imported/dwarvenaxe-bb-w00-regular.ttf-3ab673ef620319ae9c8d9dbf859ebb61.fontdata"]
 
 [params]
 

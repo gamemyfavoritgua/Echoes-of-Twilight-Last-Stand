@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lydidcui5575"
-path="res://.godot/imported/Werebear-shadow.png-48c2e5a5405560e500d5798c507e8718.ctex"
+path="res://.godot/imported/Werebear-shadow.png-01936e2af2232a69641426a677a9f85d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Werebear/Werebear/shadow sprites/Werebear-shadow.png"
-dest_files=["res://.godot/imported/Werebear-shadow.png-48c2e5a5405560e500d5798c507e8718.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Werebear/Werebear/shadow sprites/Werebear-shadow.png"
+dest_files=["res://.godot/imported/Werebear-shadow.png-01936e2af2232a69641426a677a9f85d.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bn3qns0a3xb05"
-path="res://.godot/imported/Armored Axeman-Shadow_death.png-f3fd2993160b5610c1cfdc95accfa29e.ctex"
+path="res://.godot/imported/Armored Axeman-Shadow_death.png-0f7c8a8e3b4170f3236f650a51040474.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Armored Axeman/Armored Axeman/Shadow sprites/Armored Axeman-Shadow_death.png"
-dest_files=["res://.godot/imported/Armored Axeman-Shadow_death.png-f3fd2993160b5610c1cfdc95accfa29e.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Armored Axeman/Armored Axeman/Shadow sprites/Armored Axeman-Shadow_death.png"
+dest_files=["res://.godot/imported/Armored Axeman-Shadow_death.png-0f7c8a8e3b4170f3236f650a51040474.ctex"]
 
 [params]
 

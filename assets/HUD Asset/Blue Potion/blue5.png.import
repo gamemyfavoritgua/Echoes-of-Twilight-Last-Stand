@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvdoq83vcy4y0"
-path="res://.godot/imported/blue5.png-b6009b674aa6fbcc2104ee21984f57f9.ctex"
+path="res://.godot/imported/blue5.png-eb25fd981afd23d0bb1ba30c3c19fb96.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/HUD Asset/Blue Potion/blue5.png"
-dest_files=["res://.godot/imported/blue5.png-b6009b674aa6fbcc2104ee21984f57f9.ctex"]
+source_file="res://Assets/HUD Asset/Blue Potion/blue5.png"
+dest_files=["res://.godot/imported/blue5.png-eb25fd981afd23d0bb1ba30c3c19fb96.ctex"]
 
 [params]
 

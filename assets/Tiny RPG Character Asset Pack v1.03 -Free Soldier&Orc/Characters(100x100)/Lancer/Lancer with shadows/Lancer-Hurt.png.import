@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://w7dohk5fdp47"
-path="res://.godot/imported/Lancer-Hurt.png-f272a0644d8b2388e08b71c45e0e9858.ctex"
+path="res://.godot/imported/Lancer-Hurt.png-fd4846b13e6c53e05213d1581c92abe3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Lancer/Lancer with shadows/Lancer-Hurt.png"
-dest_files=["res://.godot/imported/Lancer-Hurt.png-f272a0644d8b2388e08b71c45e0e9858.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Lancer/Lancer with shadows/Lancer-Hurt.png"
+dest_files=["res://.godot/imported/Lancer-Hurt.png-fd4846b13e6c53e05213d1581c92abe3.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://creietc3amrmv"
-path="res://.godot/imported/Archer-Hurt.png-2da4a9669347b5ff04d3d56531503b29.ctex"
+path="res://.godot/imported/Archer-Hurt.png-82d63039042f44f8bda11a1126c97238.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Archer/Archer with shadows/Archer-Hurt.png"
-dest_files=["res://.godot/imported/Archer-Hurt.png-2da4a9669347b5ff04d3d56531503b29.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Archer/Archer with shadows/Archer-Hurt.png"
+dest_files=["res://.godot/imported/Archer-Hurt.png-82d63039042f44f8bda11a1126c97238.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2op6snyg6leo"
-path="res://.godot/imported/Wizard-Attack01.png-61e7b62f50a88dcf6da0d7fc017c0c37.ctex"
+path="res://.godot/imported/Wizard-Attack01.png-fa4607171c89de8f70ee541c32bf2970.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard/Wizard-Attack01.png"
-dest_files=["res://.godot/imported/Wizard-Attack01.png-61e7b62f50a88dcf6da0d7fc017c0c37.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard/Wizard-Attack01.png"
+dest_files=["res://.godot/imported/Wizard-Attack01.png-fa4607171c89de8f70ee541c32bf2970.ctex"]
 
 [params]
 

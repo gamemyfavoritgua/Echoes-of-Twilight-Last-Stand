@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmv4mfyxgm46r"
-path="res://.godot/imported/Swordsman-Attack01_Effect.png-66eff3ae8d6908e13f3497105a0c5c47.ctex"
+path="res://.godot/imported/Swordsman-Attack01_Effect.png-6d865ecdfa2a626d217b4dcd4f786bf8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Swordsman/Swordsman(Split Effects)/Swordsman-Attack01_Effect.png"
-dest_files=["res://.godot/imported/Swordsman-Attack01_Effect.png-66eff3ae8d6908e13f3497105a0c5c47.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Swordsman/Swordsman(Split Effects)/Swordsman-Attack01_Effect.png"
+dest_files=["res://.godot/imported/Swordsman-Attack01_Effect.png-6d865ecdfa2a626d217b4dcd4f786bf8.ctex"]
 
 [params]
 

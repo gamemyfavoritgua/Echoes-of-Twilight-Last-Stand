@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1yha1ad7oo37"
-path="res://.godot/imported/Werewolf-Hurt.png-18d09111a0f5715fbccdbb97b6e22f74.ctex"
+path="res://.godot/imported/Werewolf-Hurt.png-3f36bfc03ab605f46bb81f8ed89d13ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Werewolf/Werewolf/Werewolf-Hurt.png"
-dest_files=["res://.godot/imported/Werewolf-Hurt.png-18d09111a0f5715fbccdbb97b6e22f74.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Werewolf/Werewolf/Werewolf-Hurt.png"
+dest_files=["res://.godot/imported/Werewolf-Hurt.png-3f36bfc03ab605f46bb81f8ed89d13ea.ctex"]
 
 [params]
 

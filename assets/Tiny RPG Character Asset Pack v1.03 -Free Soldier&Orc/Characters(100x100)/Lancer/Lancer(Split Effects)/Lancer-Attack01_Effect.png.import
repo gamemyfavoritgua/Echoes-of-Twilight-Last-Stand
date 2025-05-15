@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cifj05n7ku520"
-path="res://.godot/imported/Lancer-Attack01_Effect.png-ab3ab87ce4ddf4baa0604865fa6c63d5.ctex"
+path="res://.godot/imported/Lancer-Attack01_Effect.png-2231eb6b0cd84401da7068bd74d7a395.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Lancer/Lancer(Split Effects)/Lancer-Attack01_Effect.png"
-dest_files=["res://.godot/imported/Lancer-Attack01_Effect.png-ab3ab87ce4ddf4baa0604865fa6c63d5.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Lancer/Lancer(Split Effects)/Lancer-Attack01_Effect.png"
+dest_files=["res://.godot/imported/Lancer-Attack01_Effect.png-2231eb6b0cd84401da7068bd74d7a395.ctex"]
 
 [params]
 

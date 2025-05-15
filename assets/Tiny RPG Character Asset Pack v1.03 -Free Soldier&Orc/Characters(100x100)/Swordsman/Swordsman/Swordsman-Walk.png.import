@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cedcreib586fj"
-path="res://.godot/imported/Swordsman-Walk.png-5057e4b51f446315875435c5d4c046aa.ctex"
+path="res://.godot/imported/Swordsman-Walk.png-bebcf1e9b30adfa5a1bf9b6104abcb38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Swordsman/Swordsman/Swordsman-Walk.png"
-dest_files=["res://.godot/imported/Swordsman-Walk.png-5057e4b51f446315875435c5d4c046aa.ctex"]
+source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Swordsman/Swordsman/Swordsman-Walk.png"
+dest_files=["res://.godot/imported/Swordsman-Walk.png-bebcf1e9b30adfa5a1bf9b6104abcb38.ctex"]
 
 [params]
 
