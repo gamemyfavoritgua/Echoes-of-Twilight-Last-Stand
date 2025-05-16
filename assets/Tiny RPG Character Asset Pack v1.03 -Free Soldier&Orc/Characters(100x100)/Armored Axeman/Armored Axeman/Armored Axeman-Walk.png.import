@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://skkvpf7ekt4l"
-path="res://.godot/imported/Armored Axeman-Walk.png-fb32f56fe64d5327b2967e55ca75df36.ctex"
+path="res://.godot/imported/Armored Axeman-Walk.png-a8f4f355d712e6a28a19b8418f075fe0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Armored Axeman/Armored Axeman/Armored Axeman-Walk.png"
-dest_files=["res://.godot/imported/Armored Axeman-Walk.png-fb32f56fe64d5327b2967e55ca75df36.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Armored Axeman/Armored Axeman/Armored Axeman-Walk.png"
+dest_files=["res://.godot/imported/Armored Axeman-Walk.png-a8f4f355d712e6a28a19b8418f075fe0.ctex"]
 
 [params]
 

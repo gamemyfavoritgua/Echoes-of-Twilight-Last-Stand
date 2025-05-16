@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwjmg1v832gyh"
-path="res://.godot/imported/Slime-Death.png-1e5c563d6b501fa95dac04d117d20e1a.ctex"
+path="res://.godot/imported/Slime-Death.png-cbcb94132938a335069662f2f5eb2eb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Slime/Slime with shadows/Slime-Death.png"
-dest_files=["res://.godot/imported/Slime-Death.png-1e5c563d6b501fa95dac04d117d20e1a.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Slime/Slime with shadows/Slime-Death.png"
+dest_files=["res://.godot/imported/Slime-Death.png-cbcb94132938a335069662f2f5eb2eb3.ctex"]
 
 [params]
 

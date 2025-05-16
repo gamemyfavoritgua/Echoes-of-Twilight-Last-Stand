@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ban8cfaypqp4s"
-path="res://.godot/imported/Skeleton Archer-Attack_Effect.png-b8cdf3c40bbfb009057bc5926c8204e2.ctex"
+path="res://.godot/imported/Skeleton Archer-Attack_Effect.png-89850313000cef6daefa0c8fa8a94b11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Skeleton Archer/Skeleton Archer(Split Effects)/Skeleton Archer-Attack_Effect.png"
-dest_files=["res://.godot/imported/Skeleton Archer-Attack_Effect.png-b8cdf3c40bbfb009057bc5926c8204e2.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Skeleton Archer/Skeleton Archer(Split Effects)/Skeleton Archer-Attack_Effect.png"
+dest_files=["res://.godot/imported/Skeleton Archer-Attack_Effect.png-89850313000cef6daefa0c8fa8a94b11.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2bbkcvebeae0"
-path="res://.godot/imported/Wizard-Walk.png-37a4acb229097cce325a52e11a67747c.ctex"
+path="res://.godot/imported/Wizard-Walk.png-80cef2a0ee7d7d2559719b31221def84.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard with shadows/Wizard-Walk.png"
-dest_files=["res://.godot/imported/Wizard-Walk.png-37a4acb229097cce325a52e11a67747c.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard with shadows/Wizard-Walk.png"
+dest_files=["res://.godot/imported/Wizard-Walk.png-80cef2a0ee7d7d2559719b31221def84.ctex"]
 
 [params]
 

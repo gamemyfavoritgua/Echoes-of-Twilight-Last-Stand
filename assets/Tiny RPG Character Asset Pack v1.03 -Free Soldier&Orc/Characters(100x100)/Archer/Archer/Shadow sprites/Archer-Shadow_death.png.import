@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3lbv587le53j"
-path="res://.godot/imported/Archer-Shadow_death.png-a495a9859d6fac5c955bfbf55bd8ec6f.ctex"
+path="res://.godot/imported/Archer-Shadow_death.png-87ffbf17a34653b88d731f857f1ef8b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Archer/Archer/Shadow sprites/Archer-Shadow_death.png"
-dest_files=["res://.godot/imported/Archer-Shadow_death.png-a495a9859d6fac5c955bfbf55bd8ec6f.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Archer/Archer/Shadow sprites/Archer-Shadow_death.png"
+dest_files=["res://.godot/imported/Archer-Shadow_death.png-87ffbf17a34653b88d731f857f1ef8b8.ctex"]
 
 [params]
 

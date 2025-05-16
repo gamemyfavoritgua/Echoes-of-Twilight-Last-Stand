@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl8bljhm0pqqj"
-path="res://.godot/imported/Knight Templar-Block.png-233c7d55dad7186229a389d18e715613.ctex"
+path="res://.godot/imported/Knight Templar-Block.png-8d9c5aa93f8242386498276303372658.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight Templar/Knight Templar/Knight Templar-Block.png"
-dest_files=["res://.godot/imported/Knight Templar-Block.png-233c7d55dad7186229a389d18e715613.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight Templar/Knight Templar/Knight Templar-Block.png"
+dest_files=["res://.godot/imported/Knight Templar-Block.png-8d9c5aa93f8242386498276303372658.ctex"]
 
 [params]
 

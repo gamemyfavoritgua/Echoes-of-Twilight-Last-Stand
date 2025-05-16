@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://w45weh51ejp8"
-path="res://.godot/imported/Wizard.png-6bf2ec83db6f2576839096311ed86d23.ctex"
+path="res://.godot/imported/Wizard.png-3c89b7cb628606283e9a7a53fd1d6a0f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard/Wizard.png"
-dest_files=["res://.godot/imported/Wizard.png-6bf2ec83db6f2576839096311ed86d23.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard/Wizard.png"
+dest_files=["res://.godot/imported/Wizard.png-3c89b7cb628606283e9a7a53fd1d6a0f.ctex"]
 
 [params]
 

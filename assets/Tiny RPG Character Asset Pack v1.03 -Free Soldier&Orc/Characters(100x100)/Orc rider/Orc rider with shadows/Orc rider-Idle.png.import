@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dya185kxuw6pt"
-path="res://.godot/imported/Orc rider-Idle.png-af0bf6b48b5b0f2317654ef850d54412.ctex"
+path="res://.godot/imported/Orc rider-Idle.png-a5ed46de8536325bf3a5afe5cc03948e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc rider/Orc rider with shadows/Orc rider-Idle.png"
-dest_files=["res://.godot/imported/Orc rider-Idle.png-af0bf6b48b5b0f2317654ef850d54412.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc rider/Orc rider with shadows/Orc rider-Idle.png"
+dest_files=["res://.godot/imported/Orc rider-Idle.png-a5ed46de8536325bf3a5afe5cc03948e.ctex"]
 
 [params]
 

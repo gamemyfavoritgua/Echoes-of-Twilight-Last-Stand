@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://rrnotqvmgvrc"
-path="res://.godot/imported/Star.png-514d0a939701375272abd564f4d8793d.ctex"
+path="res://.godot/imported/Star.png-a0d5c56e13c5ba1ae03ef279d2986333.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HUD Asset/Star.png"
-dest_files=["res://.godot/imported/Star.png-514d0a939701375272abd564f4d8793d.ctex"]
+source_file="res://assets/HUD Asset/Star.png"
+dest_files=["res://.godot/imported/Star.png-a0d5c56e13c5ba1ae03ef279d2986333.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcg8aru4qocdy"
-path="res://.godot/imported/Greatsword Skeleton-Walk.png-9692b72a305bc896b877f56df17a14a3.ctex"
+path="res://.godot/imported/Greatsword Skeleton-Walk.png-b38dc87780ee1aceb90c97c069e3f8ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Greatsword Skeleton/Greatsword Skeleton with shadows/Greatsword Skeleton-Walk.png"
-dest_files=["res://.godot/imported/Greatsword Skeleton-Walk.png-9692b72a305bc896b877f56df17a14a3.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Greatsword Skeleton/Greatsword Skeleton with shadows/Greatsword Skeleton-Walk.png"
+dest_files=["res://.godot/imported/Greatsword Skeleton-Walk.png-b38dc87780ee1aceb90c97c069e3f8ce.ctex"]
 
 [params]
 

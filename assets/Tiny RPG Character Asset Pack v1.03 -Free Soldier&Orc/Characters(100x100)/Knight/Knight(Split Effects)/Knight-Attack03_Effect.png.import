@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bt3ncm7x17quo"
-path="res://.godot/imported/Knight-Attack03_Effect.png-6a3a8dd2300714f7638e5a5097ca54f1.ctex"
+path="res://.godot/imported/Knight-Attack03_Effect.png-db3f3d583f6b036c96e8ad4af3ed13fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight/Knight(Split Effects)/Knight-Attack03_Effect.png"
-dest_files=["res://.godot/imported/Knight-Attack03_Effect.png-6a3a8dd2300714f7638e5a5097ca54f1.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight/Knight(Split Effects)/Knight-Attack03_Effect.png"
+dest_files=["res://.godot/imported/Knight-Attack03_Effect.png-db3f3d583f6b036c96e8ad4af3ed13fb.ctex"]
 
 [params]
 
