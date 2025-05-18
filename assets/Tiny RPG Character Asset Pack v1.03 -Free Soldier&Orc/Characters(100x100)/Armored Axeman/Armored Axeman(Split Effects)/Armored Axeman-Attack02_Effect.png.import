@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csj3q7nuue246"
-path="res://.godot/imported/Armored Axeman-Attack02_Effect.png-ea6f3e961f9f33bceb8f0f70744696e7.ctex"
+path="res://.godot/imported/Armored Axeman-Attack02_Effect.png-8594253d2bcd98d6534203e00b0f736a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Armored Axeman/Armored Axeman(Split Effects)/Armored Axeman-Attack02_Effect.png"
-dest_files=["res://.godot/imported/Armored Axeman-Attack02_Effect.png-ea6f3e961f9f33bceb8f0f70744696e7.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Armored Axeman/Armored Axeman(Split Effects)/Armored Axeman-Attack02_Effect.png"
+dest_files=["res://.godot/imported/Armored Axeman-Attack02_Effect.png-8594253d2bcd98d6534203e00b0f736a.ctex"]
 
 [params]
 

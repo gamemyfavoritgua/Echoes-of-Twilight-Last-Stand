@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjpf2xeqjpxef"
-path="res://.godot/imported/Armored Orc-Walk.png-b4f54fff448ce1b1a1b2c7bbe60701a4.ctex"
+path="res://.godot/imported/Armored Orc-Walk.png-e8fe9eb790cc0155422d1026fbb8b2d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Armored Orc/Armored Orc/Armored Orc-Walk.png"
-dest_files=["res://.godot/imported/Armored Orc-Walk.png-b4f54fff448ce1b1a1b2c7bbe60701a4.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Armored Orc/Armored Orc/Armored Orc-Walk.png"
+dest_files=["res://.godot/imported/Armored Orc-Walk.png-e8fe9eb790cc0155422d1026fbb8b2d8.ctex"]
 
 [params]
 

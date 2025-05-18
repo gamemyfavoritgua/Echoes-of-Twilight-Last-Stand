@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq27p6k5vaxh"
-path="res://.godot/imported/Priest.png-f63776827980572994d3dd1a16619cf5.ctex"
+path="res://.godot/imported/Priest.png-981d8e80ac49594a3dded6835698454f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Priest/Priest with shadows/Priest.png"
-dest_files=["res://.godot/imported/Priest.png-f63776827980572994d3dd1a16619cf5.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Priest/Priest with shadows/Priest.png"
+dest_files=["res://.godot/imported/Priest.png-981d8e80ac49594a3dded6835698454f.ctex"]
 
 [params]
 

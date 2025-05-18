@@ -3,6 +3,7 @@ class_name GoblinState extends State
 const IDLE = "Idle"
 const WALK = "Walk"
 const HURT = "Hurt"
+const DEATH = "Death"
 
 var player: Goblin
 var target: Player

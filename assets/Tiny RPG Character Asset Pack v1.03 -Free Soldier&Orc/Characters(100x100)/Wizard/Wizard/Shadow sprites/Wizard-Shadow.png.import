@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2ppmrgbkt1vx"
-path="res://.godot/imported/Wizard-Shadow.png-6b81dd8c8299a5f9d63e320cf6df7ff9.ctex"
+path="res://.godot/imported/Wizard-Shadow.png-6b2ce000d656ec328b6933553428545a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard/Shadow sprites/Wizard-Shadow.png"
-dest_files=["res://.godot/imported/Wizard-Shadow.png-6b81dd8c8299a5f9d63e320cf6df7ff9.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard/Shadow sprites/Wizard-Shadow.png"
+dest_files=["res://.godot/imported/Wizard-Shadow.png-6b2ce000d656ec328b6933553428545a.ctex"]
 
 [params]
 

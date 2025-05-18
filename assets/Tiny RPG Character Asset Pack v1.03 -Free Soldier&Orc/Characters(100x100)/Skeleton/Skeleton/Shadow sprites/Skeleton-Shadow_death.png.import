@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xynp6gcsce4k"
-path="res://.godot/imported/Skeleton-Shadow_death.png-291ce1facaaa07d395c8423c0aded855.ctex"
+path="res://.godot/imported/Skeleton-Shadow_death.png-8ee1fc93b2b0808406826fce51ea942b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Skeleton/Skeleton/Shadow sprites/Skeleton-Shadow_death.png"
-dest_files=["res://.godot/imported/Skeleton-Shadow_death.png-291ce1facaaa07d395c8423c0aded855.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Skeleton/Skeleton/Shadow sprites/Skeleton-Shadow_death.png"
+dest_files=["res://.godot/imported/Skeleton-Shadow_death.png-8ee1fc93b2b0808406826fce51ea942b.ctex"]
 
 [params]
 

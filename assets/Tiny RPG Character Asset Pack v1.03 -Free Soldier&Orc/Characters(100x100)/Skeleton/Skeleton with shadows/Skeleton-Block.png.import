@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csd8d1tyt7u8n"
-path="res://.godot/imported/Skeleton-Block.png-3647e59bc707cc767be597b4d3de5f63.ctex"
+path="res://.godot/imported/Skeleton-Block.png-60a3b17538b9dc1e21d2690ddda55ae8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Skeleton/Skeleton with shadows/Skeleton-Block.png"
-dest_files=["res://.godot/imported/Skeleton-Block.png-3647e59bc707cc767be597b4d3de5f63.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Skeleton/Skeleton with shadows/Skeleton-Block.png"
+dest_files=["res://.godot/imported/Skeleton-Block.png-60a3b17538b9dc1e21d2690ddda55ae8.ctex"]
 
 [params]
 

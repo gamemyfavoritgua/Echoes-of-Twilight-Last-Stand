@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr5af3ut8gxy3"
-path="res://.godot/imported/Werewolf-Walk.png-1b64f3f7ffae09f02d7e0492db9af5f9.ctex"
+path="res://.godot/imported/Werewolf-Walk.png-1de3c3cc4fafbba01fae15fff4d92a45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Werewolf/Werewolf/Werewolf-Walk.png"
-dest_files=["res://.godot/imported/Werewolf-Walk.png-1b64f3f7ffae09f02d7e0492db9af5f9.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Werewolf/Werewolf/Werewolf-Walk.png"
+dest_files=["res://.godot/imported/Werewolf-Walk.png-1de3c3cc4fafbba01fae15fff4d92a45.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5tksqd7gdxet"
-path="res://.godot/imported/maIn menu.png-72392af3ba9781a337b09ff065889e9f.ctex"
+path="res://.godot/imported/maIn menu.png-e22f54deee4347919947ce0b893e65b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Picture Asset/maIn menu.png"
-dest_files=["res://.godot/imported/maIn menu.png-72392af3ba9781a337b09ff065889e9f.ctex"]
+source_file="res://assets/Picture Asset/maIn menu.png"
+dest_files=["res://.godot/imported/maIn menu.png-e22f54deee4347919947ce0b893e65b2.ctex"]
 
 [params]
 

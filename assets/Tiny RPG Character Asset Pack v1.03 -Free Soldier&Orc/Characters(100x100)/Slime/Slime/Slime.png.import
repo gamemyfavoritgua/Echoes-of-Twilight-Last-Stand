@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://re1qcdovtcl6"
-path="res://.godot/imported/Slime.png-7e5228c8ebd730a8a7e8daa6c4f3f887.ctex"
+path="res://.godot/imported/Slime.png-cf025042dbdcc89a28b984bbb22ca091.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Slime/Slime/Slime.png"
-dest_files=["res://.godot/imported/Slime.png-7e5228c8ebd730a8a7e8daa6c4f3f887.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Slime/Slime/Slime.png"
+dest_files=["res://.godot/imported/Slime.png-cf025042dbdcc89a28b984bbb22ca091.ctex"]
 
 [params]
 

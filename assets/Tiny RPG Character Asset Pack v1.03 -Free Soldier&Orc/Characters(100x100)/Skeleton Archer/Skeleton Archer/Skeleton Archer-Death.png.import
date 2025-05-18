@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwk2uo44xugpu"
-path="res://.godot/imported/Skeleton Archer-Death.png-b2bd7eb7884f11542027d177d5d798c2.ctex"
+path="res://.godot/imported/Skeleton Archer-Death.png-c034b62dc36ebf99000366ae3511b8ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Skeleton Archer/Skeleton Archer/Skeleton Archer-Death.png"
-dest_files=["res://.godot/imported/Skeleton Archer-Death.png-b2bd7eb7884f11542027d177d5d798c2.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Skeleton Archer/Skeleton Archer/Skeleton Archer-Death.png"
+dest_files=["res://.godot/imported/Skeleton Archer-Death.png-c034b62dc36ebf99000366ae3511b8ca.ctex"]
 
 [params]
 

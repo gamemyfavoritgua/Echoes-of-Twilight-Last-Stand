@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr3f10hwstf88"
-path="res://.godot/imported/Swordsman-Hurt.png-ab1d46baa5c7026ff5fc9efcdf89d35c.ctex"
+path="res://.godot/imported/Swordsman-Hurt.png-0a5664177e5f847d8f2d7cf89172cc97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Swordsman/Swordsman/Swordsman-Hurt.png"
-dest_files=["res://.godot/imported/Swordsman-Hurt.png-ab1d46baa5c7026ff5fc9efcdf89d35c.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Swordsman/Swordsman/Swordsman-Hurt.png"
+dest_files=["res://.godot/imported/Swordsman-Hurt.png-0a5664177e5f847d8f2d7cf89172cc97.ctex"]
 
 [params]
 

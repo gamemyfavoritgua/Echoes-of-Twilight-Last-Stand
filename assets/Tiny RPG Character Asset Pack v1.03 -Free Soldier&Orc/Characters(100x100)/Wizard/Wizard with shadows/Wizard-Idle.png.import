@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ll158f8uerij"
-path="res://.godot/imported/Wizard-Idle.png-11af97b3d0a807993b3f4033f68d3487.ctex"
+path="res://.godot/imported/Wizard-Idle.png-f3aa899cd11d03707be2c1e879341873.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard with shadows/Wizard-Idle.png"
-dest_files=["res://.godot/imported/Wizard-Idle.png-11af97b3d0a807993b3f4033f68d3487.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard with shadows/Wizard-Idle.png"
+dest_files=["res://.godot/imported/Wizard-Idle.png-f3aa899cd11d03707be2c1e879341873.ctex"]
 
 [params]
 

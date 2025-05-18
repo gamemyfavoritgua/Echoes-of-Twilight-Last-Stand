@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsxpru5jbcyv1"
-path="res://.godot/imported/Lancer-Walk01.png-bee02771de1ebf66dd95e85684fd903f.ctex"
+path="res://.godot/imported/Lancer-Walk01.png-5dc72548caba9d4636946c0fd1e2500c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Lancer/Lancer/Lancer-Walk01.png"
-dest_files=["res://.godot/imported/Lancer-Walk01.png-bee02771de1ebf66dd95e85684fd903f.ctex"]
+source_file="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Lancer/Lancer/Lancer-Walk01.png"
+dest_files=["res://.godot/imported/Lancer-Walk01.png-5dc72548caba9d4636946c0fd1e2500c.ctex"]
 
 [params]
 
