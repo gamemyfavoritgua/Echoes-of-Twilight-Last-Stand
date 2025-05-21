@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://bdy7s43p5b2co"]
+[gd_scene load_steps=63 format=3 uid="uid://bdy7s43p5b2co"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_x3k6p"]
 [ext_resource type="Texture2D" uid="uid://cpbwuoi7jiwvi" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier-Attack01.png" id="2_xr6pp"]
@@ -13,6 +13,9 @@
 [ext_resource type="Script" path="res://scripts/states/idle.gd" id="10_ypttp"]
 [ext_resource type="Script" path="res://scripts/states/walk.gd" id="11_wurt2"]
 [ext_resource type="Script" path="res://scripts/states/attack.gd" id="12_1rwaq"]
+[ext_resource type="PackedScene" uid="uid://e0ce8ldkh148" path="res://scenes/twilight.tscn" id="13_gajw7"]
+[ext_resource type="Script" path="res://scripts/states/hurt.gd" id="14_j47kf"]
+[ext_resource type="Script" path="res://scripts/states/death.gd" id="15_4snot"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0qst4"]
 size = Vector2(17, 22)
@@ -360,7 +363,7 @@ animations = [{
 radius = 30.0
 
 [node name="Character" type="CharacterBody2D" groups=["Player"]]
-collision_mask = 2
+collision_mask = 3
 script = ExtResource("1_x3k6p")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -371,10 +374,8 @@ shape = SubResource("RectangleShape2D_0qst4")
 z_index = 1
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_b6fsj")
-animation = &"attack_2"
+animation = &"idle"
 autoplay = "idle"
-frame = 5
-frame_progress = 1.0
 
 [node name="AttackRange" type="Area2D" parent="." node_paths=PackedStringArray("player")]
 collision_layer = 0
@@ -407,6 +408,14 @@ next_state = "Attack3"
 [node name="Attack3" type="Node" parent="StateMachine"]
 script = ExtResource("12_1rwaq")
 anim = "attack_3"
+
+[node name="Hurt" type="Node" parent="StateMachine"]
+script = ExtResource("14_j47kf")
+
+[node name="Death" type="Node" parent="StateMachine"]
+script = ExtResource("15_4snot")
+
+[node name="Twilight" parent="." instance=ExtResource("13_gajw7")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3.5, 3.5)
