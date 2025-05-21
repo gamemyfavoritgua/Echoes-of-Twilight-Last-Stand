@@ -26,8 +26,15 @@ func check_enemies() -> void:
                 enemy.tree_exiting.connect(_on_enemy_tree_exiting)
 
 func _on_enemy_tree_exiting() -> void:
-    await get_tree().create_timer(0.1).timeout
-    check_enemies()
+    var timer = Timer.new()
+    add_child(timer)
+    timer.one_shot = true
+    timer.wait_time = 0.1
+    timer.timeout.connect(func(): 
+        check_enemies()
+        timer.queue_free()
+    )
+    timer.start()
 
 func reveal_stair() -> void:
     visible = true
@@ -35,7 +42,6 @@ func reveal_stair() -> void:
     if collision_shape:
         collision_shape.disabled = false
     
-    # Aktifkan Area2D untuk transisi level
     collision_area.monitoring = true
     collision_area.monitorable = false  # Tetap false karena kita hanya ingin mendeteksi player, bukan sebaliknya
     
