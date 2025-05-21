@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dq2sumkymjrtc" path="res://scenes/tile_map.tscn" id="1_2vbam"]
 [ext_resource type="Texture2D" uid="uid://b2b6ifrnr5pn3" path="res://assets/Map Asset/mainlevbuild.png" id="2_37vsr"]
-[ext_resource type="PackedScene" uid="uid://dse5qeep3ka8" path="res://scenes/templar.tscn" id="3_73ldf"]
+[ext_resource type="PackedScene" uid="uid://ijllhqckdke8" path="res://scenes/templar.tscn" id="3_73ldf"]
 [ext_resource type="PackedScene" uid="uid://x0jndsnsbqj0" path="res://scenes/enemy.tscn" id="4_j3jwj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n6anm"]
@@ -1047,7 +1047,6 @@ tile_set = SubResource("TileSet_ljnuq")
 
 [node name="Templar" parent="." instance=ExtResource("3_73ldf")]
 position = Vector2(251, 17)
-collision_mask = 3
 
 [node name="Enemy" parent="." instance=ExtResource("4_j3jwj")]
 position = Vector2(354, 17)
