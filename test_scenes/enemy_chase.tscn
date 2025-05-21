@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://d1cvkefs6hnsg"]
+[gd_scene load_steps=8 format=3 uid="uid://d1cvkefs6hnsg"]
 
 [ext_resource type="PackedScene" uid="uid://dq2sumkymjrtc" path="res://scenes/tile_map.tscn" id="1_orrqg"]
 [ext_resource type="Texture2D" uid="uid://b2b6ifrnr5pn3" path="res://assets/Map Asset/mainlevbuild.png" id="2_6k2sy"]
 [ext_resource type="PackedScene" uid="uid://bdy7s43p5b2co" path="res://scenes/character.tscn" id="3_r2htg"]
 [ext_resource type="PackedScene" uid="uid://x0jndsnsbqj0" path="res://scenes/enemy.tscn" id="4_xx4ou"]
+[ext_resource type="PackedScene" uid="uid://b4f067rodh2wr" path="res://scenes/elite_orc.tscn" id="5_q7a7s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n6anm"]
 texture = ExtResource("2_6k2sy")
@@ -1048,7 +1049,6 @@ tile_set = SubResource("TileSet_ljnuq")
 [node name="Character" parent="." instance=ExtResource("3_r2htg")]
 z_index = 1
 position = Vector2(251, 17)
-collision_mask = 3
 platform_floor_layers = 0
 speed = 175.0
 
@@ -1056,3 +1056,6 @@ speed = 175.0
 position = Vector2(354, 17)
 collision_mask = 3
 platform_floor_layers = 4294967280
+
+[node name="EliteOrc" parent="." instance=ExtResource("5_q7a7s")]
+position = Vector2(385, 264)

@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://scripts/attack_range.gd" id="9_j2ow6"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="10_n46wx"]
 [ext_resource type="Script" path="res://scripts/states/idle.gd" id="11_550nu"]
+[ext_resource type="Script" path="res://scripts/states/hurt.gd" id="12_1qfxi"]
 [ext_resource type="Script" path="res://scripts/states/walk.gd" id="12_8hy0c"]
 [ext_resource type="Script" path="res://scripts/states/hurt.gd" id="12_kj5jf"]
 [ext_resource type="Script" path="res://scripts/states/death.gd" id="13_g2jcw"]
