@@ -4,6 +4,7 @@ const IDLE = "Idle"
 const WALK = "Walk"
 const HURT = "Hurt"
 const DEATH = "Death"
+const ATTACK = "Attack"
 
 var player: Goblin
 var target: Player
