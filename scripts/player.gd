@@ -33,6 +33,6 @@ func attacked(damage, is_twilight: bool = false):
 func buff(stat):
     speed += stat
     health += stat
-	
+    
 func heal(amount: int):
-	health = min(health + amount, max_health)
+    health = min(health + amount, max_health)

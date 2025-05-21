@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://dwp5sf66jbcb5"]
+[gd_scene load_steps=11 format=3 uid="uid://dwp5sf66jbcb5"]
 
+[ext_resource type="Script" path="res://scripts/ui/select_character.gd" id="1_sqiqa"]
 [ext_resource type="Texture2D" uid="uid://c5tksqd7gdxet" path="res://assets/Picture Asset/maIn menu.png" id="1_wcoqk"]
 [ext_resource type="FontFile" uid="uid://cs0w4uwwpf5j0" path="res://assets/Font Asset/DungeonFont.ttf" id="2_50t86"]
 [ext_resource type="Texture2D" uid="uid://dvjd14lv3a655" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Idle.png" id="2_aeq26"]
@@ -28,6 +29,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_sqiqa")
+soldier_scene = "res://scenes/Level1.tscn"
+wizard_scene = "res://scenes/Level1.tscn"
+knight_scene = "res://scenes/Level1.tscn"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 2
