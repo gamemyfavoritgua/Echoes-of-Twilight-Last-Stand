@@ -4,7 +4,7 @@ class_name Goblin extends CharacterBody2D
 @export var max_health := 100.0
 var health := max_health
 @export_file("*.tscn") var item_scene_path := ""
-@export var drop_chance := 0.2
+@export var drop_chance := 1
 
 @onready var animation_player = $AnimatedSprite2D
 
@@ -16,7 +16,7 @@ func take_damage(damage_amount: float) -> void:
 	var drop_position = global_position
 	
 	if health <= 0:
-	  print("Enemy health: ", health)
+		print("Enemy health: ", health)
 		var state_machine = get_node("StateMachine")
 		if state_machine:
 			state_machine._transition_to_next_state("Death")
