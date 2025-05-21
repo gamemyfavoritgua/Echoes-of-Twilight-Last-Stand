@@ -14,7 +14,7 @@ signal health_change
 var direction: Vector2 = Vector2(1, 0)
 
 func _ready():
-	add_to_group("Player")
+	add_to_group("player")
 	add_child(twilight)
 	twilight.player = self
 	attack_area.monitoring = false
