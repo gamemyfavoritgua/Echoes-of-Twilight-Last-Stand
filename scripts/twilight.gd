@@ -28,7 +28,7 @@ func _on_fill_timer_timeout():
 
 func _on_drain_timer_timeout():
 	if player != null:
-		player.attacked(health_drain)
+		player.attacked(health_drain, true)
 		
 func apply_buff():
 	buff_applied = true
