@@ -292,7 +292,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_u7sji"]
 radius = 64.0
 
-[node name="Enemy" type="CharacterBody2D" groups=["enemy"]]
+[node name="Goblin" type="CharacterBody2D" groups=["enemy"]]
 collision_layer = 2
 platform_floor_layers = 4294967294
 script = ExtResource("1_oum07")
@@ -324,6 +324,7 @@ script = ExtResource("9_or4xy")
 
 [node name="Walk" type="Node" parent="StateMachine"]
 script = ExtResource("10_w0uja")
+attack_range = null
 
 [node name="Hurt" type="Node" parent="StateMachine"]
 script = ExtResource("12_lbbag")
