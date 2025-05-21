@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://br76jtkpqe5cw"]
+[gd_scene load_steps=65 format=3 uid="uid://br76jtkpqe5cw"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rwwew"]
 [ext_resource type="Texture2D" uid="uid://fbyvv30i2s5b" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard with shadows/Wizard.png" id="2_1yqmw"]
@@ -10,6 +10,8 @@
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="10_n46wx"]
 [ext_resource type="Script" path="res://scripts/states/idle.gd" id="11_550nu"]
 [ext_resource type="Script" path="res://scripts/states/walk.gd" id="12_8hy0c"]
+[ext_resource type="Script" path="res://scripts/states/hurt.gd" id="12_kj5jf"]
+[ext_resource type="Script" path="res://scripts/states/death.gd" id="13_g2jcw"]
 [ext_resource type="Script" path="res://scripts/states/attack.gd" id="13_y7ly5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0qst4"]
@@ -388,7 +390,7 @@ animations = [{
 radius = 50.3587
 
 [node name="Wizard" type="CharacterBody2D" groups=["Player"]]
-collision_mask = 2
+collision_mask = 3
 script = ExtResource("1_rwwew")
 speed = 215.0
 health = 85.0
@@ -439,5 +441,11 @@ next_state = "Attack3"
 script = ExtResource("13_y7ly5")
 anim = "attack_2"
 
+[node name="Hurt" type="Node" parent="StateMachine"]
+script = ExtResource("12_kj5jf")
+
+[node name="Death" type="Node" parent="StateMachine"]
+script = ExtResource("13_g2jcw")
+
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3.5, 3.5)
+zoom = Vector2(2, 2)
