@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://br76jtkpqe5cw"]
+[gd_scene load_steps=67 format=3 uid="uid://br76jtkpqe5cw"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rwwew"]
 [ext_resource type="Texture2D" uid="uid://fbyvv30i2s5b" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard with shadows/Wizard.png" id="2_1yqmw"]
@@ -11,8 +11,10 @@
 [ext_resource type="Script" path="res://scripts/states/idle.gd" id="11_550nu"]
 [ext_resource type="Script" path="res://scripts/states/walk.gd" id="12_8hy0c"]
 [ext_resource type="Script" path="res://scripts/states/hurt.gd" id="12_kj5jf"]
+[ext_resource type="AudioStream" uid="uid://70rfnknnwrfq" path="res://assets/Sound Asset/sfx/IceWizzard.wav" id="13_1vdtu"]
 [ext_resource type="Script" path="res://scripts/states/death.gd" id="13_g2jcw"]
 [ext_resource type="Script" path="res://scripts/states/attack.gd" id="13_y7ly5"]
+[ext_resource type="AudioStream" uid="uid://b650olmema3yd" path="res://assets/Sound Asset/sfx/wizzard.wav" id="14_ge7yv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0qst4"]
 size = Vector2(31.5, 22)
@@ -413,8 +415,8 @@ frame_progress = 1.0
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("9_j2ow6")
-damage_amount = 20.0
 player = NodePath("..")
+damage_amount = 20.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange"]
 shape = SubResource("CircleShape2D_ga8s7")
@@ -432,15 +434,18 @@ script = ExtResource("12_8hy0c")
 script = ExtResource("13_y7ly5")
 anim = "attack_1"
 next_state = "Attack2"
+attack_sfx_stream = ExtResource("14_ge7yv")
 
 [node name="Attack2" type="Node" parent="StateMachine"]
 script = ExtResource("13_y7ly5")
 anim = "attack_1"
 next_state = "Attack3"
+attack_sfx_stream = ExtResource("14_ge7yv")
 
 [node name="Attack3" type="Node" parent="StateMachine"]
 script = ExtResource("13_y7ly5")
 anim = "attack_2"
+attack_sfx_stream = ExtResource("13_1vdtu")
 
 [node name="Hurt" type="Node" parent="StateMachine"]
 script = ExtResource("12_kj5jf")
@@ -450,3 +455,6 @@ script = ExtResource("13_g2jcw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
+
+[node name="AttackSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_ge7yv")

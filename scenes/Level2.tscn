@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://j70823pox1xi"]
+[gd_scene load_steps=5 format=3 uid="uid://j70823pox1xi"]
 
 [ext_resource type="PackedScene" uid="uid://dq2sumkymjrtc" path="res://scenes/tile_map.tscn" id="1_d8hgd"]
 [ext_resource type="Script" path="res://scripts/ui/level1.gd" id="1_f247c"]
 [ext_resource type="PackedScene" uid="uid://n1yynmtvu0tx" path="res://scenes/Stair.tscn" id="3_lhvsn"]
+[ext_resource type="AudioStream" uid="uid://vavttiel8ta2" path="res://assets/Sound Asset/Level2.wav" id="4_mg2rv"]
 
 [node name="Level2" type="Node2D"]
 script = ExtResource("1_f247c")
@@ -12,3 +13,8 @@ script = ExtResource("1_f247c")
 [node name="Stair" parent="." instance=ExtResource("3_lhvsn")]
 visible = false
 position = Vector2(1186, 31)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_mg2rv")
+volume_db = -25.037
+autoplay = true

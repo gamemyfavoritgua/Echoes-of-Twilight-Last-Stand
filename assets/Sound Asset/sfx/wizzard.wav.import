@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b650olmema3yd"
+path="res://.godot/imported/wizzard.wav-f6dbd36516b34ab49bda5b9aa9f3228e.sample"
+
+[deps]
+
+source_file="res://assets/Sound Asset/sfx/wizzard.wav"
+dest_files=["res://.godot/imported/wizzard.wav-f6dbd36516b34ab49bda5b9aa9f3228e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

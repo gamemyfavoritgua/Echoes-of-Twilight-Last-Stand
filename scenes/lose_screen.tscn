@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://ch0ysxlm7mav5"]
+[gd_scene load_steps=5 format=3 uid="uid://ch0ysxlm7mav5"]
 
 [ext_resource type="Texture2D" uid="uid://c52i7v8qyx0ps" path="res://assets/WinLose Asset/LoseScreen.jpg" id="1_c3i4e"]
 [ext_resource type="FontFile" uid="uid://b7pjd3bk5ipv1" path="res://assets/Font Asset/dwarvenaxe-bb-w00-regular.ttf" id="2_vhn75"]
 [ext_resource type="Script" path="res://scripts/lose_main_button.gd" id="3_bik6t"]
+[ext_resource type="AudioStream" uid="uid://dx8rv04ddydgb" path="res://assets/Sound Asset/sfx/gameover.wav" id="4_4yiv5"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 
@@ -32,5 +33,10 @@ theme_override_font_sizes/font_size = 55
 text = "Main Menu"
 underline = 1
 script = ExtResource("3_bik6t")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_4yiv5")
+volume_db = -25.037
+autoplay = true
 
 [connection signal="pressed" from="TextureRect/LinkButton" to="TextureRect/LinkButton" method="_on_pressed"]
