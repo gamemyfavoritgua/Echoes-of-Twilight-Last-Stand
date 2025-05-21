@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6nbdebp23fiy"]
+
+[ext_resource type="Texture2D" uid="uid://d0y7fvujoi4da" path="res://assets/WinLose Asset/WinScreen.jpg" id="1_plqr5"]
+[ext_resource type="FontFile" uid="uid://b7pjd3bk5ipv1" path="res://assets/Font Asset/dwarvenaxe-bb-w00-regular.ttf" id="2_nlp2e"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+texture = ExtResource("1_plqr5")
+
+[node name="LinkButton" type="LinkButton" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -99.5
+offset_top = -132.0
+offset_right = 99.5
+offset_bottom = -71.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_nlp2e")
+theme_override_font_sizes/font_size = 55
+text = "Main Menu"
+underline = 2
