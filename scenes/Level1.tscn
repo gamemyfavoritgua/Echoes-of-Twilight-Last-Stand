@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dt47cj2helrl3"]
+[gd_scene load_steps=5 format=3 uid="uid://dt47cj2helrl3"]
 
 [ext_resource type="PackedScene" uid="uid://o60smglc68yx" path="res://scenes/tile_map_1.tscn" id="1_twshx"]
 [ext_resource type="PackedScene" uid="uid://bdy7s43p5b2co" path="res://scenes/character.tscn" id="2_igms1"]
 [ext_resource type="PackedScene" uid="uid://x0jndsnsbqj0" path="res://scenes/enemy.tscn" id="3_04sec"]
 [ext_resource type="PackedScene" uid="uid://n1yynmtvu0tx" path="res://scenes/Stair.tscn" id="4_m5kgg"]
-[ext_resource type="PackedScene" uid="uid://dyn80ud8o7lpj" path="res://scenes/enemy_spawner.tscn" id="5_pocc4"]
 
 [node name="Level1" type="Node2D"]
 
@@ -35,5 +34,3 @@ health = 200.0
 [node name="Stair" parent="." instance=ExtResource("4_m5kgg")]
 visible = false
 position = Vector2(1183, 29)
-
-[node name="EnemySpawner" parent="." instance=ExtResource("5_pocc4")]
