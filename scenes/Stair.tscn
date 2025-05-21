@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cojpr1501gr36"]
+[gd_scene load_steps=6 format=3 uid="uid://n1yynmtvu0tx"]
 
 [ext_resource type="Script" path="res://scripts/stair.gd" id="1_52sw6"]
 [ext_resource type="Texture2D" uid="uid://cnnr62f4vcfv6" path="res://assets/Map Asset/mainlevbuild-stair.png" id="1_755jq"]
