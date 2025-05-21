@@ -1,9 +1,11 @@
-[gd_scene load_steps=61 format=3 uid="uid://dse5qeep3ka8"]
+[gd_scene load_steps=63 format=3 uid="uid://dse5qeep3ka8"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_0pakq"]
 [ext_resource type="Texture2D" uid="uid://s8n8c4aeh6r1" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight Templar/Knight Templar with shadows/Knight Templar.png" id="2_iu5hu"]
 [ext_resource type="Texture2D" uid="uid://dfsy230egc1ic" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight Templar/Knight Templar with shadows/Knight Templar-Walk02.png" id="4_ccbuc"]
 [ext_resource type="Script" path="res://scripts/attack_range.gd" id="9_54luo"]
+[ext_resource type="Script" path="res://scripts/states/hurt.gd" id="9_olwjq"]
+[ext_resource type="Script" path="res://scripts/states/death.gd" id="10_nm4ua"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="10_ugm6f"]
 [ext_resource type="Script" path="res://scripts/states/idle.gd" id="11_c4goq"]
 [ext_resource type="Script" path="res://scripts/states/walk.gd" id="12_f17g8"]
@@ -440,6 +442,12 @@ next_state = "Attack3"
 [node name="Attack3" type="Node" parent="StateMachine"]
 script = ExtResource("13_n0xke")
 anim = "attack_3"
+
+[node name="Hurt" type="Node" parent="StateMachine"]
+script = ExtResource("9_olwjq")
+
+[node name="Death" type="Node" parent="StateMachine"]
+script = ExtResource("10_nm4ua")
 
 [node name="Twilight" parent="." instance=ExtResource("14_hibon")]
 
