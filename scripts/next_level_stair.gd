@@ -1,6 +1,7 @@
 extends Area2D
 
 @export var next_level_path: String = "res://test_scenes/enemy_chase_templar.tscn"
+var transition_scene = preload("res://scenes/transition.tscn")
 
 func _ready() -> void:
 	monitoring = true
@@ -26,22 +27,9 @@ func _show_indicator() -> void:
 	pass
 
 func _go_to_next_level() -> void:
-	var transition = ColorRect.new()
-	transition.color = Color(0, 0, 0, 0)
-	transition.size = get_viewport().size
-	transition.z_index = 100
+	# Instantiate transition
+	var transition = transition_scene.instantiate()
 	get_tree().root.add_child(transition)
 	
-	var tween = create_tween()
-	tween.tween_property(transition, "color:a", 1.0, 1.0)
-	
-	await tween.finished
-	
-	var old_transition = transition
-	
-	get_tree().call_deferred("change_scene_to_file", next_level_path)
-	
-	await get_tree().process_frame
-	
-	if is_instance_valid(old_transition) and old_transition.is_inside_tree():
-		old_transition.queue_free()
+	# Change scene using transition
+	transition.change_scene(next_level_path)
