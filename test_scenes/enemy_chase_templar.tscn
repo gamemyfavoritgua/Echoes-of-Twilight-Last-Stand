@@ -1,12 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://c7gloecpsaljj"]
+[gd_scene load_steps=7 format=3 uid="uid://dj1q3ohgxgesq"]
 
-[ext_resource type="PackedScene" uid="uid://dq2sumkymjrtc" path="res://scenes/tile_map.tscn" id="1_t0q7l"]
-[ext_resource type="Texture2D" uid="uid://b2b6ifrnr5pn3" path="res://assets/Map Asset/mainlevbuild.png" id="2_e3aax"]
-[ext_resource type="PackedScene" uid="uid://br76jtkpqe5cw" path="res://scenes/wizard.tscn" id="3_b740x"]
-[ext_resource type="PackedScene" uid="uid://x0jndsnsbqj0" path="res://scenes/enemy.tscn" id="4_tgdqi"]
+[ext_resource type="PackedScene" uid="uid://dq2sumkymjrtc" path="res://scenes/tile_map.tscn" id="1_2vbam"]
+[ext_resource type="Texture2D" uid="uid://b2b6ifrnr5pn3" path="res://assets/Map Asset/mainlevbuild.png" id="2_37vsr"]
+[ext_resource type="PackedScene" uid="uid://dse5qeep3ka8" path="res://scenes/templar.tscn" id="3_73ldf"]
+[ext_resource type="PackedScene" uid="uid://x0jndsnsbqj0" path="res://scenes/enemy.tscn" id="4_j3jwj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n6anm"]
-texture = ExtResource("2_e3aax")
+texture = ExtResource("2_37vsr")
 40:0/0 = 0
 41:0/0 = 0
 42:0/0 = 0
@@ -1042,12 +1042,14 @@ sources/0 = SubResource("TileSetAtlasSource_n6anm")
 
 [node name="EnemyChase" type="Node2D"]
 
-[node name="TileMap" parent="." instance=ExtResource("1_t0q7l")]
+[node name="TileMap" parent="." instance=ExtResource("1_2vbam")]
 tile_set = SubResource("TileSet_ljnuq")
 
-[node name="Wizard" parent="." instance=ExtResource("3_b740x")]
+[node name="Templar" parent="." instance=ExtResource("3_73ldf")]
 position = Vector2(251, 17)
 collision_mask = 3
 
-[node name="Enemy" parent="." instance=ExtResource("4_tgdqi")]
+[node name="Enemy" parent="." instance=ExtResource("4_j3jwj")]
 position = Vector2(354, 17)
+collision_mask = 3
+platform_floor_layers = 4294967280

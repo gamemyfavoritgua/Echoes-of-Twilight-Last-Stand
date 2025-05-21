@@ -1,12 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://c7gloecpsaljj"]
+[gd_scene load_steps=8 format=3 uid="uid://d2n1ykvo0sjh7"]
 
-[ext_resource type="PackedScene" uid="uid://dq2sumkymjrtc" path="res://scenes/tile_map.tscn" id="1_t0q7l"]
-[ext_resource type="Texture2D" uid="uid://b2b6ifrnr5pn3" path="res://assets/Map Asset/mainlevbuild.png" id="2_e3aax"]
-[ext_resource type="PackedScene" uid="uid://br76jtkpqe5cw" path="res://scenes/wizard.tscn" id="3_b740x"]
-[ext_resource type="PackedScene" uid="uid://x0jndsnsbqj0" path="res://scenes/enemy.tscn" id="4_tgdqi"]
+[ext_resource type="PackedScene" uid="uid://dq2sumkymjrtc" path="res://scenes/tile_map.tscn" id="1_qumqg"]
+[ext_resource type="Texture2D" uid="uid://b2b6ifrnr5pn3" path="res://assets/Map Asset/mainlevbuild.png" id="2_c3iif"]
+[ext_resource type="PackedScene" uid="uid://bdy7s43p5b2co" path="res://scenes/character.tscn" id="3_4hxij"]
+[ext_resource type="PackedScene" uid="uid://x0jndsnsbqj0" path="res://scenes/enemy.tscn" id="4_ke4co"]
+[ext_resource type="PackedScene" uid="uid://cojpr1501gr36" path="res://scenes/Stair.tscn" id="5_jn0s5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n6anm"]
-texture = ExtResource("2_e3aax")
+texture = ExtResource("2_c3iif")
 40:0/0 = 0
 41:0/0 = 0
 42:0/0 = 0
@@ -1042,12 +1043,21 @@ sources/0 = SubResource("TileSetAtlasSource_n6anm")
 
 [node name="EnemyChase" type="Node2D"]
 
-[node name="TileMap" parent="." instance=ExtResource("1_t0q7l")]
+[node name="TileMap" parent="." instance=ExtResource("1_qumqg")]
 tile_set = SubResource("TileSet_ljnuq")
 
-[node name="Wizard" parent="." instance=ExtResource("3_b740x")]
+[node name="Character" parent="." instance=ExtResource("3_4hxij")]
+z_index = 1
 position = Vector2(251, 17)
 collision_mask = 3
+platform_floor_layers = 0
+speed = 175.0
 
-[node name="Enemy" parent="." instance=ExtResource("4_tgdqi")]
+[node name="Enemy" parent="." instance=ExtResource("4_ke4co")]
 position = Vector2(354, 17)
+collision_mask = 3
+platform_floor_layers = 4294967280
+
+[node name="Stair" parent="." instance=ExtResource("5_jn0s5")]
+visible = false
+position = Vector2(1186, 29)
