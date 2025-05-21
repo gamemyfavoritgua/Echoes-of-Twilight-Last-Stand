@@ -11,28 +11,28 @@ class_name Player extends CharacterBody2D
 var direction: Vector2 = Vector2(1, 0)
 
 func _ready():
-	add_to_group("Player")
-	add_child(twilight)
-	twilight.player = self
-	attack_area.monitoring = false
+    add_to_group("Player")
+    add_child(twilight)
+    twilight.player = self
+    attack_area.monitoring = false
 
 func attacked(damage, is_twilight: bool = false):
-	if health <= 0:
-		return
-	
-	health -= damage
-	print("Player HP:", health)
-	
-	var state_machine = get_node("StateMachine")
-	if health <= 0:
-		state_machine._transition_to_next_state("Death")
-	else:
-		if !is_twilight:
-			state_machine._transition_to_next_state("Hurt")
+    if health <= 0:
+        return
+    
+    health -= damage
+    print("Player HP:", health)
+    
+    var state_machine = get_node("StateMachine")
+    if health <= 0:
+        state_machine._transition_to_next_state("Death")
+    else:
+        if !is_twilight:
+            state_machine._transition_to_next_state("Hurt")
 
 func buff(stat):
-	speed += stat
-	#health += stat
-	
+    speed += stat
+    #health += stat
+    
 func heal(amount: int):
-	health = min(health + amount, max_health)
+    health = min(health + amount, max_health)
