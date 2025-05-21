@@ -32,7 +32,7 @@ func _try_find_target() -> void:
         if target != null:
             find_target_timer.stop()
             find_target_timer.queue_free()
-            print("Goblin found player target successfully")
+            # print("Goblin found player target successfully")
         else:
             push_warning("First node in 'Player' group is not a Player.")
     else:
