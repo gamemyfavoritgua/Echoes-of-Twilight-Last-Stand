@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://x0jndsnsbqj0"]
+[gd_scene load_steps=52 format=3 uid="uid://x0jndsnsbqj0"]
 
 [ext_resource type="Texture2D" uid="uid://dx446eke0ukk4" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Attack01.png" id="1_nxabk"]
 [ext_resource type="Script" path="res://scripts/enemy/goblin.gd" id="1_oum07"]
@@ -13,6 +13,7 @@
 [ext_resource type="Script" path="res://scripts/enemy/states/walk.gd" id="10_w0uja"]
 [ext_resource type="Script" path="res://scripts/enemy/states/hurt.gd" id="12_lbbag"]
 [ext_resource type="Script" path="res://scripts/enemy/states/death.gd" id="13_vvl6u"]
+[ext_resource type="Script" path="res://scripts/enemy/states/attack.gd" id="14_p0jyv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jwxh4"]
 size = Vector2(15, 19)
@@ -291,7 +292,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_u7sji"]
 radius = 64.0
 
-[node name="Enemy" type="CharacterBody2D" groups=["enemy"]]
+[node name="Goblin" type="CharacterBody2D" groups=["enemy"]]
 collision_layer = 2
 platform_floor_layers = 4294967294
 script = ExtResource("1_oum07")
@@ -304,10 +305,8 @@ shape = SubResource("RectangleShape2D_jwxh4")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_6jwcx")
-animation = &"death"
+animation = &"idle"
 autoplay = "idle"
-frame = 3
-frame_progress = 1.0
 
 [node name="AreaChase" type="Area2D" parent="." node_paths=PackedStringArray("target_node")]
 collision_layer = 0
@@ -331,3 +330,6 @@ script = ExtResource("12_lbbag")
 
 [node name="Death" type="Node" parent="StateMachine"]
 script = ExtResource("13_vvl6u")
+
+[node name="Attack" type="Node" parent="StateMachine"]
+script = ExtResource("14_p0jyv")
