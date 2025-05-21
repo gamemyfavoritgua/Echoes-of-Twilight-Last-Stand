@@ -2,14 +2,14 @@ extends Node
 
 @export var fill_duration_sec: float = 60.0  # total detik sampai penuh
 @export var buff_amount: int = 50
-@export var health_drain: int = 1
+@export var health_drain: int = 5
 
 @onready var twilight_progress = $TwilightProgress
 @onready var fill_timer = $FillTimer
 @onready var drain_timer = $DrainTimer
 
 var buff_applied: bool = false
-var player: Node2D = null
+var player: CharacterBody2D = null
 
 func _ready():
 	fill_timer.start()
@@ -29,7 +29,7 @@ func _on_fill_timer_timeout():
 func _on_drain_timer_timeout():
 	if player != null:
 		player.attacked(health_drain)
-		
+
 func apply_buff():
 	buff_applied = true
 	if player != null:

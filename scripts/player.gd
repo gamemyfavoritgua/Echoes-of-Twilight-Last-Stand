@@ -6,6 +6,7 @@ class_name Player extends CharacterBody2D
 @onready var twilight = preload("res://scenes/twilight.tscn").instantiate()
 @onready var animation_player = $AnimatedSprite2D
 @onready var attack_area = $AttackRange
+@onready var damage = attack_area.damage_amount
 
 var direction: Vector2 = Vector2(1, 0)
 
@@ -20,10 +21,11 @@ func attacked(damage):
 	
 	health -= damage
 	print(health)
-	print(speed)
 	if health <= 0:
 		queue_free()
 
 func buff(stat):
 	speed += stat
-	health += stat
+	damage += stat
+	print(damage)
+	print(speed)
