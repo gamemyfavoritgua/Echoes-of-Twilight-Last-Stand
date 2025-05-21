@@ -22,7 +22,6 @@ func physics_update(_delta: float) -> void:
         return
         
     player.attack_area.monitoring = false    
-        
     var input_direction_x := Input.get_axis("move_left", "move_right")
     
     if attack_buffered and next_state:
