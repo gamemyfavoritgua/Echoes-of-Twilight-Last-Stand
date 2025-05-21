@@ -27,12 +27,13 @@ func attacked(damage, is_twilight: bool = false):
     if health <= 0:
         state_machine._transition_to_next_state("Death")
     else:
+        attack_area.monitoring = false
         if !is_twilight:
             state_machine._transition_to_next_state("Hurt")
 
 func buff(stat):
     speed += stat
-    #health += stat
+    health += stat
     
 func heal(amount: int):
     health = min(health + amount, max_health)

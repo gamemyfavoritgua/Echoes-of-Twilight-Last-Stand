@@ -418,4 +418,4 @@ script = ExtResource("15_4snot")
 [node name="Twilight" parent="." instance=ExtResource("13_gajw7")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3.5, 3.5)
+zoom = Vector2(2, 2)
