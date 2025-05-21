@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bbsvj5c8pkypu"]
+[gd_scene load_steps=5 format=3 uid="uid://bbsvj5c8pkypu"]
 
-[ext_resource type="Texture2D" uid="uid://c5tksqd7gdxet" path="res://assets/Picture Asset/maIn menu.png" id="1_gheg4"]
 [ext_resource type="FontFile" uid="uid://b7pjd3bk5ipv1" path="res://assets/Font Asset/dwarvenaxe-bb-w00-regular.ttf" id="2_w4ox0"]
 [ext_resource type="FontFile" uid="uid://fnpxkalvu07v" path="res://assets/Font Asset/DUNGRG__.TTF" id="3_or6f5"]
+[ext_resource type="VideoStream" path="res://assets/Picture Asset/Wallpaper-video.ogv" id="4_q7iti"]
+[ext_resource type="AudioStream" uid="uid://d16pnln0moqcl" path="res://assets/Sound Asset/main_menu.wav" id="4_winne"]
 
 [node name="MarginContainer" type="MarginContainer"]
 anchors_preset = 15
@@ -11,10 +12,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
 layout_mode = 2
-texture = ExtResource("1_gheg4")
-expand_mode = 3
+stream = ExtResource("4_q7iti")
+autoplay = true
+expand = true
+loop = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
@@ -53,28 +56,45 @@ theme_override_font_sizes/font_size = 40
 
 [node name="LinkButton" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_pressed_color = Color(0.670588, 0.670588, 0.52549, 1)
+theme_override_colors/font_hover_color = Color(0.670588, 0.670588, 0.52549, 1)
 theme_override_fonts/font = ExtResource("3_or6f5")
 theme_override_font_sizes/font_size = 62
-text = "                                     Start Game"
-underline = 1
+text = "Start Game"
+underline = 2
 
 [node name="LinkButton2" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_pressed_color = Color(0.670588, 0.670588, 0.52549, 1)
+theme_override_colors/font_hover_color = Color(0.670588, 0.670588, 0.52549, 1)
 theme_override_fonts/font = ExtResource("3_or6f5")
 theme_override_font_sizes/font_size = 62
-text = "                                         Tutorial"
-underline = 1
+text = "Tutorial"
+underline = 2
 
 [node name="LinkButton3" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_pressed_color = Color(0.670588, 0.670588, 0.52549, 1)
+theme_override_colors/font_hover_color = Color(0.670588, 0.670588, 0.52549, 1)
 theme_override_fonts/font = ExtResource("3_or6f5")
 theme_override_font_sizes/font_size = 62
-text = "                                            Credit"
-underline = 1
+text = "Credit"
+underline = 2
 
 [node name="LinkButton4" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_pressed_color = Color(0.670588, 0.670588, 0.52549, 1)
+theme_override_colors/font_hover_color = Color(0.670588, 0.670588, 0.52549, 1)
 theme_override_fonts/font = ExtResource("3_or6f5")
 theme_override_font_sizes/font_size = 62
-text = "                                              Exit"
-underline = 1
+text = "Exit"
+underline = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_winne")
+volume_db = -25.037
+autoplay = true
