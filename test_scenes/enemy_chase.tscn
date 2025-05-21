@@ -1048,7 +1048,6 @@ tile_set = SubResource("TileSet_ljnuq")
 [node name="Character" parent="." instance=ExtResource("3_r2htg")]
 z_index = 1
 position = Vector2(251, 17)
-collision_mask = 3
 platform_floor_layers = 0
 speed = 175.0
 
