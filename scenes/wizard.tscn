@@ -392,6 +392,7 @@ collision_mask = 2
 script = ExtResource("1_rwwew")
 speed = 215.0
 health = 85.0
+max_health = 85.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -1)

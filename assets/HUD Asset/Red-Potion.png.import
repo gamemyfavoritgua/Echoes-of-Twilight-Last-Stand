@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnnr62f4vcfv6"
-path="res://.godot/imported/mainlevbuild-stair.png-b1837e27657b997329a5b078707704ff.ctex"
+uid="uid://dml8fgsr2n5nl"
+path="res://.godot/imported/Red-Potion.png-1bb402c22b473ac4707ca8c937817803.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Map Asset/mainlevbuild-stair.png"
-dest_files=["res://.godot/imported/mainlevbuild-stair.png-b1837e27657b997329a5b078707704ff.ctex"]
+source_file="res://assets/HUD Asset/Red-Potion.png"
+dest_files=["res://.godot/imported/Red-Potion.png-1bb402c22b473ac4707ca8c937817803.ctex"]
 
 [params]
 
