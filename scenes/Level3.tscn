@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://cknp0fw7ocf0r"]
+[gd_scene load_steps=6 format=3 uid="uid://cknp0fw7ocf0r"]
 
+[ext_resource type="Script" path="res://scripts/ui/level1.gd" id="1_pthyk"]
 [ext_resource type="PackedScene" uid="uid://bagndnmxhcnio" path="res://scenes/tile_map_2.tscn" id="1_rbbab"]
 [ext_resource type="PackedScene" uid="uid://mt8y10qn7tmf" path="res://scenes/slime.tscn" id="2_5m6id"]
 [ext_resource type="PackedScene" uid="uid://n1yynmtvu0tx" path="res://scenes/Stair.tscn" id="2_lexaa"]
+[ext_resource type="PackedScene" uid="uid://bfx5evjuxj4v" path="res://scenes/minimap.tscn" id="5_snpky"]
 
 [node name="Level3" type="Node2D"]
+script = ExtResource("1_pthyk")
 
 [node name="TileMap2" parent="." instance=ExtResource("1_rbbab")]
 
@@ -53,3 +56,5 @@ position = Vector2(314, 590)
 [node name="Stair" parent="." instance=ExtResource("2_lexaa")]
 visible = false
 position = Vector2(1185, 30)
+
+[node name="Minimap" parent="." instance=ExtResource("5_snpky")]

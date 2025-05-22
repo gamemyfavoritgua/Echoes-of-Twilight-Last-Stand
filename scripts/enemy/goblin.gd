@@ -9,6 +9,7 @@ var health := max_health
 @onready var animation_player = $AnimatedSprite2D
 
 func _ready() -> void:
+    add_to_group("Enemy")
     health = max_health
 
 func take_damage(damage_amount: float) -> void:
