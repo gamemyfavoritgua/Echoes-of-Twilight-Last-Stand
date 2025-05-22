@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1r34ihcjq78k"]
+[gd_scene load_steps=4 format=3 uid="uid://dumqcom45wnpa"]
 
 [ext_resource type="Script" path="res://scripts/rune_health.gd" id="1_8rikw"]
 [ext_resource type="Texture2D" uid="uid://dml8fgsr2n5nl" path="res://assets/HUD Asset/Red-Potion.png" id="2_6204t"]
