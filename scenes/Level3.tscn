@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6qxcxlfvuna3"]
+
+[ext_resource type="PackedScene" uid="uid://bagndnmxhcnio" path="res://scenes/tile_map_2.tscn" id="1_rbbab"]
+[ext_resource type="PackedScene" uid="uid://mt8y10qn7tmf" path="res://scenes/slime.tscn" id="2_5m6id"]
+[ext_resource type="PackedScene" uid="uid://n1yynmtvu0tx" path="res://scenes/Stair.tscn" id="2_lexaa"]
+
+[node name="Level3" type="Node2D"]
+
+[node name="TileMap2" parent="." instance=ExtResource("1_rbbab")]
+
+[node name="Slime14" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(1071, 587)
+
+[node name="Slime13" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(843, 598)
+
+[node name="Slime12" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(572, 594)
+
+[node name="Slime2" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(94, 577)
+
+[node name="Slime3" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(97, 354)
+
+[node name="Slime5" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(853, 77)
+
+[node name="Slime6" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(579, 74)
+
+[node name="Slime7" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(692, 202)
+
+[node name="Slime8" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(464, 197)
+
+[node name="Slime9" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(1076, 77)
+
+[node name="Slime10" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(328, 77)
+
+[node name="Slime" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(1072, 340)
+
+[node name="Slime4" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(114, 85)
+
+[node name="Slime11" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(314, 590)
+
+[node name="Stair" parent="." instance=ExtResource("2_lexaa")]
+visible = false
+position = Vector2(1185, 30)

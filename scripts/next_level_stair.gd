@@ -8,6 +8,19 @@ func _ready() -> void:
     monitorable = false
     print("Next level stair ready!")
     
+    # Set the next level path based on current scene
+    var current_scene = get_tree().current_scene.scene_file_path
+    print("Current scene: ", current_scene)
+    
+    if "Level2" in current_scene:
+        next_level_path = "res://scenes/Level3.tscn"
+        print("Next destination: Level 3")
+    elif "Level3" in current_scene:
+        next_level_path = "res://scenes/win_screen.tscn"
+        print("Next destination: Win Screen")
+    else:
+        print("Next destination: Level 2")
+    
     body_entered.connect(_on_body_entered)
 
 func _on_body_entered(body: Node2D) -> void:

@@ -1,14 +1,42 @@
-[gd_scene load_steps=5 format=3 uid="uid://j70823pox1xi"]
+[gd_scene load_steps=6 format=3 uid="uid://j70823pox1xi"]
 
 [ext_resource type="PackedScene" uid="uid://dq2sumkymjrtc" path="res://scenes/tile_map.tscn" id="1_d8hgd"]
 [ext_resource type="Script" path="res://scripts/ui/level1.gd" id="1_f247c"]
 [ext_resource type="PackedScene" uid="uid://n1yynmtvu0tx" path="res://scenes/Stair.tscn" id="3_lhvsn"]
+[ext_resource type="PackedScene" uid="uid://cwrihh041gydy" path="res://scenes/skeleton.tscn" id="3_unoyk"]
 [ext_resource type="AudioStream" uid="uid://vavttiel8ta2" path="res://assets/Sound Asset/Level2.wav" id="4_mg2rv"]
 
 [node name="Level2" type="Node2D"]
 script = ExtResource("1_f247c")
 
 [node name="TileMap1" parent="." instance=ExtResource("1_d8hgd")]
+
+[node name="Skeleton" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(761, 350)
+
+[node name="Skeleton2" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(377, 343)
+
+[node name="Skeleton3" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(963, 168)
+
+[node name="Skeleton4" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(579, 161)
+
+[node name="Skeleton5" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(195, 165)
+
+[node name="Skeleton6" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(63, 350)
+
+[node name="Skeleton7" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(187, 541)
+
+[node name="Skeleton8" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(584, 546)
+
+[node name="Skeleton9" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(960, 533)
 
 [node name="Stair" parent="." instance=ExtResource("3_lhvsn")]
 visible = false
