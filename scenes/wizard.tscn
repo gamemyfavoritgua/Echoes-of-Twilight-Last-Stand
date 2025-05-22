@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=3 uid="uid://br76jtkpqe5cw"]
+[gd_scene load_steps=71 format=3 uid="uid://bvgbrqreo7nmp"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rwwew"]
 [ext_resource type="Texture2D" uid="uid://fbyvv30i2s5b" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard with shadows/Wizard.png" id="2_1yqmw"]
@@ -9,12 +9,16 @@
 [ext_resource type="Script" path="res://scripts/attack_range.gd" id="9_j2ow6"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="10_n46wx"]
 [ext_resource type="Script" path="res://scripts/states/idle.gd" id="11_550nu"]
+[ext_resource type="Texture2D" uid="uid://w5kiw0vghvek" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarinward4.png" id="12_5upr8"]
 [ext_resource type="Script" path="res://scripts/states/walk.gd" id="12_8hy0c"]
 [ext_resource type="Script" path="res://scripts/states/hurt.gd" id="12_kj5jf"]
 [ext_resource type="AudioStream" uid="uid://70rfnknnwrfq" path="res://assets/Sound Asset/sfx/IceWizzard.wav" id="13_1vdtu"]
+[ext_resource type="Texture2D" uid="uid://ca1skdd6vf57o" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarprogress4.png" id="13_2diks"]
 [ext_resource type="Script" path="res://scripts/states/death.gd" id="13_g2jcw"]
 [ext_resource type="Script" path="res://scripts/states/attack.gd" id="13_y7ly5"]
+[ext_resource type="Script" path="res://scripts/health_bar.gd" id="14_2l5y0"]
 [ext_resource type="AudioStream" uid="uid://b650olmema3yd" path="res://assets/Sound Asset/sfx/wizzard.wav" id="14_ge7yv"]
+[ext_resource type="Texture2D" uid="uid://d0enjvodcn35f" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarframe2.png" id="15_uocxq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0qst4"]
 size = Vector2(31.5, 22)
@@ -395,8 +399,7 @@ radius = 50.3587
 collision_mask = 3
 script = ExtResource("1_rwwew")
 speed = 215.0
-health = 85.0
-max_health = 85.0
+health = 90.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -1)
@@ -458,3 +461,30 @@ zoom = Vector2(2, 2)
 
 [node name="AttackSFX" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("14_ge7yv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HealthProgress" type="TextureProgressBar" parent="CanvasLayer" node_paths=PackedStringArray("player")]
+offset_left = 79.0
+offset_right = 129.0
+offset_bottom = 24.0
+scale = Vector2(5, 5)
+value = 100.0
+nine_patch_stretch = true
+texture_under = ExtResource("12_5upr8")
+texture_progress = ExtResource("13_2diks")
+script = ExtResource("14_2l5y0")
+player = NodePath("../..")
+metadata/_edit_use_anchors_ = true
+
+[node name="HealthFrame" type="TextureProgressBar" parent="CanvasLayer"]
+offset_right = 69.0
+offset_bottom = 24.0
+scale = Vector2(5, 5)
+value = 26.0
+stretch_margin_left = 4
+stretch_margin_top = 4
+stretch_margin_right = 4
+stretch_margin_bottom = 4
+texture_over = ExtResource("15_uocxq")
+metadata/_edit_use_anchors_ = true

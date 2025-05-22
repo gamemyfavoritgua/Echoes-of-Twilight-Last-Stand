@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=3 uid="uid://ijllhqckdke8"]
+[gd_scene load_steps=70 format=3 uid="uid://cyjj7lufws08d"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_0pakq"]
 [ext_resource type="Texture2D" uid="uid://s8n8c4aeh6r1" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight Templar/Knight Templar with shadows/Knight Templar.png" id="2_iu5hu"]
@@ -11,9 +11,13 @@
 [ext_resource type="Script" path="res://scripts/states/death.gd" id="10_x7aoq"]
 [ext_resource type="Script" path="res://scripts/states/idle.gd" id="11_c4goq"]
 [ext_resource type="AudioStream" uid="uid://xdbengq5rtc7" path="res://assets/Sound Asset/sfx/comboslash.wav" id="11_cumke"]
+[ext_resource type="Texture2D" uid="uid://w5kiw0vghvek" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarinward4.png" id="12_et54f"]
 [ext_resource type="Script" path="res://scripts/states/walk.gd" id="12_f17g8"]
+[ext_resource type="Texture2D" uid="uid://ca1skdd6vf57o" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarprogress4.png" id="13_4p2bu"]
 [ext_resource type="Script" path="res://scripts/states/attack.gd" id="13_n0xke"]
 [ext_resource type="PackedScene" uid="uid://e0ce8ldkh148" path="res://scenes/twilight.tscn" id="14_hibon"]
+[ext_resource type="Script" path="res://scripts/health_bar.gd" id="14_rulro"]
+[ext_resource type="Texture2D" uid="uid://d0enjvodcn35f" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarframe2.png" id="15_feljv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0qst4"]
 size = Vector2(17, 22)
@@ -462,3 +466,30 @@ script = ExtResource("10_x7aoq")
 zoom = Vector2(2, 2)
 
 [node name="AttackSFX" type="AudioStreamPlayer2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HealthProgress" type="TextureProgressBar" parent="CanvasLayer" node_paths=PackedStringArray("player")]
+offset_left = 79.0
+offset_right = 129.0
+offset_bottom = 24.0
+scale = Vector2(5, 5)
+value = 100.0
+nine_patch_stretch = true
+texture_under = ExtResource("12_et54f")
+texture_progress = ExtResource("13_4p2bu")
+script = ExtResource("14_rulro")
+player = NodePath("../..")
+metadata/_edit_use_anchors_ = true
+
+[node name="HealthFrame" type="TextureProgressBar" parent="CanvasLayer"]
+offset_right = 69.0
+offset_bottom = 24.0
+scale = Vector2(5, 5)
+value = 26.0
+stretch_margin_left = 4
+stretch_margin_top = 4
+stretch_margin_right = 4
+stretch_margin_bottom = 4
+texture_over = ExtResource("15_feljv")
+metadata/_edit_use_anchors_ = true

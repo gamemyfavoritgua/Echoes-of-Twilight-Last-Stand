@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=3 uid="uid://bdy7s43p5b2co"]
+[gd_scene load_steps=69 format=3 uid="uid://bdy7s43p5b2co"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_x3k6p"]
 [ext_resource type="Texture2D" uid="uid://cpbwuoi7jiwvi" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier-Attack01.png" id="2_xr6pp"]
@@ -13,12 +13,15 @@
 [ext_resource type="Script" path="res://scripts/states/idle.gd" id="10_ypttp"]
 [ext_resource type="Script" path="res://scripts/states/walk.gd" id="11_wurt2"]
 [ext_resource type="Script" path="res://scripts/states/attack.gd" id="12_1rwaq"]
-[ext_resource type="PackedScene" uid="uid://e0ce8ldkh148" path="res://scenes/twilight.tscn" id="13_gajw7"]
 [ext_resource type="AudioStream" uid="uid://djlbwsrcecc00" path="res://assets/Sound Asset/sfx/slahsnew.wav" id="14_8i25f"]
 [ext_resource type="Script" path="res://scripts/states/hurt.gd" id="14_j47kf"]
 [ext_resource type="AudioStream" uid="uid://b8uvrv60lvr0x" path="res://assets/Sound Asset/sfx/character2attack.wav" id="15_4lujt"]
 [ext_resource type="Script" path="res://scripts/states/death.gd" id="15_4snot"]
 [ext_resource type="AudioStream" uid="uid://caidvct6yynie" path="res://assets/Sound Asset/sfx/character3attack.mp3" id="16_5x80b"]
+[ext_resource type="Texture2D" uid="uid://w5kiw0vghvek" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarinward4.png" id="16_6ku1j"]
+[ext_resource type="Texture2D" uid="uid://ca1skdd6vf57o" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarprogress4.png" id="17_gkwou"]
+[ext_resource type="Script" path="res://scripts/health_bar.gd" id="18_p2je8"]
+[ext_resource type="Texture2D" uid="uid://d0enjvodcn35f" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarframe2.png" id="19_blr10"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0qst4"]
 size = Vector2(17, 22)
@@ -421,9 +424,34 @@ script = ExtResource("14_j47kf")
 [node name="Death" type="Node" parent="StateMachine"]
 script = ExtResource("15_4snot")
 
-[node name="Twilight" parent="." instance=ExtResource("13_gajw7")]
-
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
 
 [node name="AttackSFX" type="AudioStreamPlayer2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HealthProgress" type="TextureProgressBar" parent="CanvasLayer" node_paths=PackedStringArray("player")]
+offset_left = 79.0
+offset_right = 129.0
+offset_bottom = 24.0
+scale = Vector2(5, 5)
+value = 100.0
+nine_patch_stretch = true
+texture_under = ExtResource("16_6ku1j")
+texture_progress = ExtResource("17_gkwou")
+script = ExtResource("18_p2je8")
+player = NodePath("../..")
+metadata/_edit_use_anchors_ = true
+
+[node name="HealthFrame" type="TextureProgressBar" parent="CanvasLayer"]
+offset_right = 69.0
+offset_bottom = 24.0
+scale = Vector2(5, 5)
+value = 26.0
+stretch_margin_left = 4
+stretch_margin_top = 4
+stretch_margin_right = 4
+stretch_margin_bottom = 4
+texture_over = ExtResource("19_blr10")
+metadata/_edit_use_anchors_ = true

@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://dltc78tq66ki5"]
+
+[ext_resource type="Texture2D" path="res://assets/HUD Asset/CrimsonFantasyGUI/helathbarframe.png" id="1_504ma"]
+[ext_resource type="Script" path="res://scripts/health_bar.gd" id="1_kku1g"]
+[ext_resource type="Texture2D" path="res://assets/HUD Asset/CrimsonFantasyGUI/healthbarinward1.png" id="1_l8yfa"]
+[ext_resource type="Texture2D" path="res://assets/HUD Asset/CrimsonFantasyGUI/healthbarprogress1.png" id="3_7qaai"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_right = 136.0
+offset_bottom = 26.0
+texture_under = ExtResource("1_l8yfa")
+texture_over = ExtResource("1_504ma")
+texture_progress = ExtResource("3_7qaai")
+script = ExtResource("1_kku1g")
