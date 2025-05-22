@@ -7,7 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://d16pnln0moqcl" path="res://assets/Sound Asset/main_menu.wav" id="4_winne"]
 [ext_resource type="Script" path="res://scripts/exit_button_4.gd" id="5_36cev"]
 
-[node name="MarginContainer" type="MarginContainer"]
+[node name="MarginContainer2" type="MarginContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
