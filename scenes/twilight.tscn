@@ -20,7 +20,6 @@ offset_bottom = 27.0
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TwilightProgress" type="TextureProgressBar" parent="CanvasLayer"]
-anchors_preset = -1
 offset_left = 892.0
 offset_top = -13.0
 offset_right = 965.0
@@ -31,7 +30,6 @@ texture_under = ExtResource("2_2a6di")
 texture_progress = ExtResource("3_aai4j")
 
 [node name="TwilightFrame" type="TextureProgressBar" parent="CanvasLayer"]
-anchors_preset = -1
 offset_left = 810.0
 offset_top = 5.0
 offset_right = 908.0
