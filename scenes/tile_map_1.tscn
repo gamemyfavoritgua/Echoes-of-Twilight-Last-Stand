@@ -1191,6 +1191,7 @@ size = Vector2(56, 8)
 size = Vector2(8, 65)
 
 [node name="TileMap1" type="TileMap"]
+position = Vector2(0, -1)
 tile_set = SubResource("TileSet_x1g6c")
 format = 2
 layer_0/name = "black"
