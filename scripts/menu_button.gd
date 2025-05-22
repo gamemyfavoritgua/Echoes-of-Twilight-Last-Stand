@@ -7,3 +7,6 @@ func _on_Start_Game_pressed():
 	
 func _on_Tutorial_pressed():
 	get_tree().change_scene_to_file("res://scenes/" + scene_to_load + ".tscn")
+
+func _on_Main_Menu_pressed():
+	get_tree().change_scene_to_file("res://scenes/" + scene_to_load + ".tscn")

@@ -76,6 +76,8 @@ theme_override_fonts/font = ExtResource("3_or6f5")
 theme_override_font_sizes/font_size = 62
 text = "Tutorial"
 underline = 2
+script = ExtResource("4_ay3nl")
+scene_to_load = "tutorial"
 
 [node name="LinkButton3" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -103,3 +105,4 @@ volume_db = -25.037
 autoplay = true
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/LinkButton" to="HBoxContainer/VBoxContainer/LinkButton" method="_on_Start_Game_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/LinkButton2" to="HBoxContainer/VBoxContainer/LinkButton2" method="_on_Tutorial_pressed"]
