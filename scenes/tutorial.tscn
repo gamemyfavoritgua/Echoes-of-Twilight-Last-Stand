@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bf4mogp6efokt"]
 
-[ext_resource type="Texture2D" uid="uid://bnxco0xqpfyx6" path="res://assets/Picture Asset/tutorial-1.png" id="1_f6ebn"]
+[ext_resource type="Texture2D" uid="uid://ckxdg8nmjfgd5" path="res://assets/Picture Asset/tutorial-2.png" id="1_sflab"]
 [ext_resource type="FontFile" uid="uid://fnpxkalvu07v" path="res://assets/Font Asset/DUNGRG__.TTF" id="2_xrlj5"]
 [ext_resource type="Script" path="res://scripts/menu_button.gd" id="3_u6qtj"]
 [ext_resource type="AudioStream" uid="uid://d16pnln0moqcl" path="res://assets/Sound Asset/main_menu.wav" id="4_6w4mo"]
@@ -15,7 +15,7 @@ grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 2
-texture = ExtResource("1_f6ebn")
+texture = ExtResource("1_sflab")
 expand_mode = 3
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
