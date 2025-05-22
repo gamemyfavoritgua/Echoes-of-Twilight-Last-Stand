@@ -1081,6 +1081,7 @@ size = Vector2(56, 8)
 size = Vector2(8, 65)
 
 [node name="TileMap1" type="TileMap"]
+position = Vector2(0, -1)
 tile_set = SubResource("TileSet_x1g6c")
 format = 2
 layer_0/name = "black"
@@ -1109,7 +1110,7 @@ position = Vector2(92, 391.5)
 shape = SubResource("RectangleShape2D_s44y6")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1060, 392)
+position = Vector2(1060, 391)
 shape = SubResource("RectangleShape2D_s44y6")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
