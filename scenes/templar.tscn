@@ -403,8 +403,8 @@ radius = 30.0
 collision_mask = 3
 script = ExtResource("1_0pakq")
 speed = 150.0
-health = 120.0
-max_health = 120.0
+health = 375.0
+max_health = 375.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -1)
