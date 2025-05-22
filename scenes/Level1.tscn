@@ -1,32 +1,26 @@
-[gd_scene load_steps=6 format=3 uid="uid://dt47cj2helrl3"]
+[gd_scene load_steps=8 format=3 uid="uid://dt47cj2helrl3"]
 
 [ext_resource type="Script" path="res://scripts/ui/level1.gd" id="1_rx8vr"]
 [ext_resource type="PackedScene" uid="uid://o60smglc68yx" path="res://scenes/tile_map_1.tscn" id="1_twshx"]
 [ext_resource type="PackedScene" uid="uid://x0jndsnsbqj0" path="res://scenes/enemy.tscn" id="3_04sec"]
-
+[ext_resource type="PackedScene" uid="uid://n1yynmtvu0tx" path="res://scenes/Stair.tscn" id="4_m5kgg"]
 [ext_resource type="AudioStream" uid="uid://bsb4oqmvskg1l" path="res://assets/Sound Asset/level1dungeon.wav" id="5_yorjc"]
-[ext_resource type="PackedScene" path="res://scenes/Stair.tscn" id="4_m5kgg"]
-
+[ext_resource type="PackedScene" uid="uid://mt8y10qn7tmf" path="res://scenes/slime.tscn" id="6_yrc01"]
+[ext_resource type="PackedScene" uid="uid://bfx5evjuxj4v" path="res://scenes/minimap.tscn" id="7_povmt"]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_rx8vr")
 
 [node name="TileMap1" parent="." instance=ExtResource("1_twshx")]
 
-[node name="Enemy" parent="." instance=ExtResource("3_04sec")]
-position = Vector2(332, 349)
-
 [node name="Enemy2" parent="." instance=ExtResource("3_04sec")]
 position = Vector2(780, 186)
-
-[node name="Enemy3" parent="." instance=ExtResource("3_04sec")]
-position = Vector2(802, 533)
 
 [node name="Enemy5" parent="." instance=ExtResource("3_04sec")]
 position = Vector2(312, 175)
 
 [node name="Enemy6" parent="." instance=ExtResource("3_04sec")]
-position = Vector2(467, 552)
+position = Vector2(127, 480)
 
 [node name="Enemy7" parent="." instance=ExtResource("3_04sec")]
 position = Vector2(654, 365)
@@ -39,3 +33,11 @@ position = Vector2(1183, 29)
 stream = ExtResource("5_yorjc")
 volume_db = -25.037
 autoplay = true
+
+[node name="Slime" parent="." instance=ExtResource("6_yrc01")]
+position = Vector2(214, 336)
+
+[node name="Slime2" parent="." instance=ExtResource("6_yrc01")]
+position = Vector2(1016, 447)
+
+[node name="Minimap" parent="." instance=ExtResource("7_povmt")]
