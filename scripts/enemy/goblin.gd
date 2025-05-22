@@ -4,7 +4,7 @@ class_name Goblin extends CharacterBody2D
 @export var max_health := 100.0
 var health := max_health
 @export_file("*.tscn") var item_scene_path := ""
-@export var drop_chance := 1
+@export var drop_chance := 0.5
 
 @onready var animation_player = $AnimatedSprite2D
 

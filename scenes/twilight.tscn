@@ -1,18 +1,45 @@
-[gd_scene load_steps=2 format=3 uid="uid://e0ce8ldkh148"]
+[gd_scene load_steps=5 format=3 uid="uid://e0ce8ldkh148"]
 
 [ext_resource type="Script" path="res://scripts/twilight.gd" id="1_mtnr6"]
+[ext_resource type="Texture2D" uid="uid://d156norbygxdh" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloTwilightBar/twilightbarindise.png" id="2_2a6di"]
+[ext_resource type="Texture2D" uid="uid://cwrd2gsnbede2" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloTwilightBar/twilightbar.png" id="2_xvau5"]
+[ext_resource type="Texture2D" uid="uid://doqufwf83d443" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloTwilightBar/twilightbarprogress.png" id="3_aai4j"]
 
 [node name="Twilight" type="Node"]
 script = ExtResource("1_mtnr6")
 
-[node name="TwilightProgress" type="ProgressBar" parent="."]
+[node name="TwilightProgre" type="ProgressBar" parent="."]
+visible = false
 offset_right = 4.0
 offset_bottom = 27.0
-max_value = 10.0
 
 [node name="FillTimer" type="Timer" parent="."]
 
 [node name="DrainTimer" type="Timer" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TwilightProgress" type="TextureProgressBar" parent="CanvasLayer"]
+anchors_preset = -1
+offset_left = 892.0
+offset_top = -13.0
+offset_right = 965.0
+offset_bottom = 27.0
+scale = Vector2(3.5, 3.5)
+nine_patch_stretch = true
+texture_under = ExtResource("2_2a6di")
+texture_progress = ExtResource("3_aai4j")
+
+[node name="TwilightFrame" type="TextureProgressBar" parent="CanvasLayer"]
+anchors_preset = -1
+offset_left = 810.0
+offset_top = 5.0
+offset_right = 908.0
+offset_bottom = 38.0
+scale = Vector2(3.5, 3.4)
+nine_patch_stretch = true
+texture_over = ExtResource("2_xvau5")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="timeout" from="FillTimer" to="." method="_on_fill_timer_timeout"]
 [connection signal="timeout" from="DrainTimer" to="." method="_on_drain_timer_timeout"]
