@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bbsvj5c8pkypu"]
+[gd_scene load_steps=6 format=3 uid="uid://bbsvj5c8pkypu"]
 
 [ext_resource type="FontFile" uid="uid://b7pjd3bk5ipv1" path="res://assets/Font Asset/dwarvenaxe-bb-w00-regular.ttf" id="2_w4ox0"]
 [ext_resource type="FontFile" uid="uid://fnpxkalvu07v" path="res://assets/Font Asset/DUNGRG__.TTF" id="3_or6f5"]
+[ext_resource type="Script" path="res://scripts/menu_button.gd" id="4_ay3nl"]
 [ext_resource type="VideoStream" path="res://assets/Picture Asset/Wallpaper-video.ogv" id="4_q7iti"]
 [ext_resource type="AudioStream" uid="uid://d16pnln0moqcl" path="res://assets/Sound Asset/main_menu.wav" id="4_winne"]
 
@@ -63,6 +64,8 @@ theme_override_fonts/font = ExtResource("3_or6f5")
 theme_override_font_sizes/font_size = 62
 text = "Start Game"
 underline = 2
+script = ExtResource("4_ay3nl")
+scene_to_load = "select_character"
 
 [node name="LinkButton2" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -73,6 +76,8 @@ theme_override_fonts/font = ExtResource("3_or6f5")
 theme_override_font_sizes/font_size = 62
 text = "Tutorial"
 underline = 2
+script = ExtResource("4_ay3nl")
+scene_to_load = "tutorial"
 
 [node name="LinkButton3" type="LinkButton" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -98,3 +103,6 @@ underline = 2
 stream = ExtResource("4_winne")
 volume_db = -25.037
 autoplay = true
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/LinkButton" to="HBoxContainer/VBoxContainer/LinkButton" method="_on_Start_Game_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/LinkButton2" to="HBoxContainer/VBoxContainer/LinkButton2" method="_on_Tutorial_pressed"]
