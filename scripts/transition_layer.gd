@@ -30,3 +30,5 @@ func change_scene(target_path: String):
     
     # Signal that transition is done
     transition_completed.emit()
+
+    queue_free()
