@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://b4f067rodh2wr"]
+[gd_scene load_steps=61 format=3 uid="uid://xggoi65xrsue"]
 
 [ext_resource type="Script" path="res://scripts/enemy/boss/elite_orc.gd" id="1_gjwnt"]
 [ext_resource type="Texture2D" uid="uid://cx3frim6ah6wj" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Elite Orc/Elite Orc with shadows/Elite Orc-Attack01.png" id="2_k01pi"]
@@ -14,6 +14,9 @@
 [ext_resource type="Script" path="res://scripts/enemy/boss/states/hurt.gd" id="12_e4ple"]
 [ext_resource type="Script" path="res://scripts/enemy/boss/states/death.gd" id="13_anarc"]
 [ext_resource type="Script" path="res://scripts/enemy/boss/states/attack.gd" id="14_lydq3"]
+[ext_resource type="Texture2D" uid="uid://c4oi5jb8n8hn8" path="res://assets/HUD Asset/CrimsonFantasyGUI/BossHealthBar/bosshealthbarinside.png" id="15_wu8g6"]
+[ext_resource type="Texture2D" uid="uid://bgceg3tlf7r7s" path="res://assets/HUD Asset/CrimsonFantasyGUI/BossHealthBar/bosshealthbarframe.png" id="16_0tghu"]
+[ext_resource type="Texture2D" uid="uid://bpuioumy0lpt2" path="res://assets/HUD Asset/CrimsonFantasyGUI/BossHealthBar/bosshealthbarprog.png" id="17_gk6ot"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jwxh4"]
 size = Vector2(22, 33)
@@ -376,3 +379,15 @@ script = ExtResource("13_anarc")
 
 [node name="Attack" type="Node" parent="StateMachine"]
 script = ExtResource("14_lydq3")
+
+[node name="BossHealthBar" type="TextureProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -34.0
+offset_top = -45.0
+offset_right = 35.0
+offset_bottom = -5.0
+max_value = 500.0
+value = 500.0
+texture_under = ExtResource("15_wu8g6")
+texture_over = ExtResource("16_0tghu")
+texture_progress = ExtResource("17_gk6ot")

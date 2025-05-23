@@ -24,10 +24,12 @@ func _ready() -> void:
 	add_child(regen_timer)
 	add_child(spawn_sfx_player)
 	spawn_sfx_player.stream = preload("res://assets/Sound Asset/sfx/goblin_spawn.wav")
+	%BossHealthBar.max_value = max_health
 
 func take_damage(damage_amount: float) -> void:
 	health -= damage_amount
 	var drop_position = global_position
+	%BossHealthBar.value = health
 	
 	if health <= 0:
 		print("Enemy health: ", health)

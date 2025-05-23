@@ -49,6 +49,8 @@ func go_to_lose_screen():
 func buff(stat):
 	speed += stat
 	damage_amount += stat
+	print("Speed player sekarang jadi ", speed)
+	print("Damage player sekarang jadi ", damage_amount)
 
 func heal(amount: int):
 	health = min(health + amount, max_health)

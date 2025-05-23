@@ -420,7 +420,7 @@ collision_layer = 0
 collision_mask = 2
 script = ExtResource("9_j2ow6")
 player = NodePath("..")
-damage_amount = 35.0
+damage_amount = 30.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange"]
 shape = SubResource("CircleShape2D_ga8s7")

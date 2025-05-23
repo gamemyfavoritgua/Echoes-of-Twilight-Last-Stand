@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://qc4173fxldln"]
+[gd_scene load_steps=57 format=3 uid="uid://b8q4i4x1ebyqd"]
 
 [ext_resource type="Script" path="res://scripts/enemy/goblin.gd" id="1_kt7of"]
 [ext_resource type="Texture2D" uid="uid://de4sl8kcmt0a2" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc rider/Orc rider with shadows/Orc rider-Attack01.png" id="2_31h8p"]

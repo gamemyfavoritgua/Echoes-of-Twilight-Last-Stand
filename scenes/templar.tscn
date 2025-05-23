@@ -461,6 +461,7 @@ script = ExtResource("9_0gpfd")
 script = ExtResource("10_x7aoq")
 
 [node name="Twilight" parent="." instance=ExtResource("14_hibon")]
+fill_duration_sec = 17.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
