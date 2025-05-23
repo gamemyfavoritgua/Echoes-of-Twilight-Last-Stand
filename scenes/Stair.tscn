@@ -25,14 +25,17 @@ texture = ExtResource("1_755jq")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -21.25)
 shape = SubResource("RectangleShape2D_fa3j1")
+disabled = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(1, 21.5)
 shape = SubResource("RectangleShape2D_fa3j1")
+disabled = true
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
 position = Vector2(17, 0.5)
 shape = SubResource("RectangleShape2D_uuw3e")
+disabled = true
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("3_5o2fn")
