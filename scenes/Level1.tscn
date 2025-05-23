@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dt47cj2helrl3"]
+[gd_scene load_steps=9 format=3 uid="uid://dt47cj2helrl3"]
 
 [ext_resource type="Script" path="res://scripts/ui/level1.gd" id="1_rx8vr"]
 [ext_resource type="PackedScene" uid="uid://o60smglc68yx" path="res://scenes/tile_map_1.tscn" id="1_twshx"]
@@ -7,11 +7,19 @@
 [ext_resource type="AudioStream" uid="uid://bsb4oqmvskg1l" path="res://assets/Sound Asset/level1dungeon.wav" id="5_yorjc"]
 [ext_resource type="PackedScene" uid="uid://mt8y10qn7tmf" path="res://scenes/slime.tscn" id="6_yrc01"]
 [ext_resource type="PackedScene" uid="uid://bfx5evjuxj4v" path="res://scenes/minimap.tscn" id="7_povmt"]
+[ext_resource type="Script" path="res://scripts/pause_manager.gd" id="8_ah37h"]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_rx8vr")
 
 [node name="TileMap1" parent="." instance=ExtResource("1_twshx")]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("8_ah37h")
 
 [node name="Enemy2" parent="." instance=ExtResource("3_04sec")]
 position = Vector2(837, 189)
