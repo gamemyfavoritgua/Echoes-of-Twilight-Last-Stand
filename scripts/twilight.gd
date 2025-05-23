@@ -1,8 +1,8 @@
 extends Node
 
-@export var fill_duration_sec: float = 10.0  # total detik sampai penuh
+@export var fill_duration_sec: float = 17.0  # total detik sampai penuh
 @export var buff_amount: int = 20
-@export var health_drain: int = 5
+@export var health_drain: int = 3
 
 @onready var twilight_progress = $CanvasLayer/TwilightProgress
 @onready var fill_timer = $FillTimer

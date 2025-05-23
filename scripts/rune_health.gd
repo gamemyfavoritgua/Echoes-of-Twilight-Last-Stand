@@ -1,6 +1,6 @@
 extends Node2D
 @export var type := "health"
-@export var amount := 20
+@export var amount := 25
 @export var float_height := 5.0
 @export var float_speed := 2.0
 

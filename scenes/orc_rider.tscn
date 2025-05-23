@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://drxp3nqmx0k71"]
+[gd_scene load_steps=57 format=3 uid="uid://bt5mbc8ug1ki4"]
 
 [ext_resource type="Script" path="res://scripts/enemy/goblin.gd" id="1_7vt7n"]
 [ext_resource type="Texture2D" uid="uid://de4sl8kcmt0a2" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc rider/Orc rider with shadows/Orc rider-Attack01.png" id="2_vw3lk"]
@@ -335,7 +335,7 @@ speed = 65.0
 max_health = 300.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -8)
+position = Vector2(1, -8)
 shape = SubResource("RectangleShape2D_jwxh4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -372,4 +372,4 @@ script = ExtResource("13_18on7")
 [node name="Attack" type="Node" parent="StateMachine"]
 script = ExtResource("14_sitw0")
 damage_amount = 20.0
-attack_cooldown = 3.0
+attack_cooldown = 2.5

@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfx5evjuxj4v"]
+
+[ext_resource type="Script" path="res://scripts/ui/minimap.gd" id="1_eukpf"]
+
+[node name="Minimap" type="CanvasLayer"]
+script = ExtResource("1_eukpf")
+
+[node name="MinimapContainer" type="MarginContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -220.0
+offset_bottom = 220.0
+grow_horizontal = 0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="MinimapBackground" type="ColorRect" parent="MinimapContainer"]
+layout_mode = 2
+color = Color(0, 0, 0, 0.5)
+
+[node name="MinimapBorder" type="ColorRect" parent="MinimapContainer"]
+layout_mode = 2
+color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="MinimapContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="MinimapViewport" type="ColorRect" parent="MinimapContainer/MarginContainer"]
+layout_mode = 2
+color = Color(0.1, 0.1, 0.1, 1)
+
+[node name="Minimap" type="Node2D" parent="MinimapContainer/MarginContainer/MinimapViewport"]
+position = Vector2(100, 100)
+
+[node name="PlayerMarker" type="Node2D" parent="MinimapContainer/MarginContainer/MinimapViewport/Minimap"]
+
+[node name="ColorRect" type="ColorRect" parent="MinimapContainer/MarginContainer/MinimapViewport/Minimap/PlayerMarker"]
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+color = Color(0, 0.8, 0, 1)

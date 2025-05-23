@@ -15,13 +15,13 @@ font_size = 50
 atlas = ExtResource("2_aeq26")
 region = Rect2(41, 39, 15, 18)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mjl0j"]
-atlas = ExtResource("3_kt41l")
-region = Rect2(43, 39, 17, 19)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_07tuw"]
 atlas = ExtResource("4_0a7ew")
 region = Rect2(43, 40, 27, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjl0j"]
+atlas = ExtResource("3_kt41l")
+region = Rect2(43, 39, 17, 19)
 
 [node name="MarginContainer" type="MarginContainer"]
 anchors_preset = 15
@@ -71,14 +71,14 @@ layout_mode = 2
 texture = SubResource("AtlasTexture_pttpx")
 stretch_mode = 4
 
-[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/MarginContainer/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 2
-texture = SubResource("AtlasTexture_mjl0j")
-stretch_mode = 4
-
 [node name="TextureRect3" type="TextureRect" parent="HBoxContainer/MarginContainer/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 texture = SubResource("AtlasTexture_07tuw")
 expand_mode = 3
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = SubResource("AtlasTexture_mjl0j")
+stretch_mode = 4
