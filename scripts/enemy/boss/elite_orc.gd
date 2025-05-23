@@ -9,6 +9,7 @@ var has_spawned_minions := false
 @export_file("*.tscn") var minion_scene_path := ""
 @onready var regen_timer := Timer.new()
 var active_minions: Array = []
+@onready var spawn_sfx_player := AudioStreamPlayer.new()
 
 
 @onready var animation_player = $AnimatedSprite2D
@@ -21,6 +22,8 @@ func _ready() -> void:
 	regen_timer.autostart = false
 	regen_timer.connect("timeout", Callable(self, "_on_regen_timeout"))
 	add_child(regen_timer)
+	add_child(spawn_sfx_player)
+	spawn_sfx_player.stream = preload("res://assets/Sound Asset/sfx/goblin_spawn.wav")
 	%BossHealthBar.max_value = max_health
 
 func take_damage(damage_amount: float) -> void:
@@ -94,6 +97,9 @@ func _spawn_minions(pos: Vector2, count: int = 4) -> void:
 			var minion_instance = minion_scene.instantiate()
 			get_parent().call_deferred("add_child", minion_instance)
 			minion_instance.global_position = spawn_pos
+			
+			if spawn_sfx_player:
+				spawn_sfx_player.play()
 
 			active_minions.append(minion_instance)
 
