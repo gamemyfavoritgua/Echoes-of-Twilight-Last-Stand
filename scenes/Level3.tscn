@@ -1,11 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://b6qxcxlfvuna3"]
+[gd_scene load_steps=11 format=3 uid="uid://b6qxcxlfvuna3"]
 
 [ext_resource type="Script" path="res://scripts/ui/level1.gd" id="1_pthyk"]
 [ext_resource type="PackedScene" uid="uid://bagndnmxhcnio" path="res://scenes/tile_map_2.tscn" id="1_rbbab"]
-[ext_resource type="PackedScene" path="res://scenes/slime.tscn" id="2_5m6id"]
+[ext_resource type="PackedScene" uid="uid://mt8y10qn7tmf" path="res://scenes/slime.tscn" id="2_5m6id"]
 [ext_resource type="PackedScene" uid="uid://n1yynmtvu0tx" path="res://scenes/Stair.tscn" id="2_lexaa"]
 [ext_resource type="Script" path="res://scripts/pause_manager.gd" id="3_rnvcc"]
-[ext_resource type="PackedScene" path="res://scenes/minimap.tscn" id="5_snpky"]
+[ext_resource type="PackedScene" uid="uid://bfx5evjuxj4v" path="res://scenes/minimap.tscn" id="5_snpky"]
+[ext_resource type="PackedScene" uid="uid://xggoi65xrsue" path="res://scenes/elite_orc.tscn" id="6_c2rmc"]
+[ext_resource type="PackedScene" uid="uid://ya8i3thoeqwe" path="res://scenes/werewolf.tscn" id="7_djnuc"]
+[ext_resource type="AudioStream" uid="uid://bsb4oqmvskg1l" path="res://assets/Sound Asset/level1dungeon.wav" id="9_t525o"]
+[ext_resource type="PackedScene" uid="uid://cwrihh041gydy" path="res://scenes/skeleton.tscn" id="10_vcdct"]
 
 [node name="Level3" type="Node2D"]
 script = ExtResource("1_pthyk")
@@ -19,50 +23,65 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("3_rnvcc")
 
-[node name="Slime14" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(1071, 587)
-
-[node name="Slime13" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(843, 598)
-
-[node name="Slime12" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(572, 594)
-
-[node name="Slime2" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(94, 577)
-
-[node name="Slime3" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(97, 354)
-
-[node name="Slime5" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(853, 77)
-
-[node name="Slime6" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(579, 74)
-
-[node name="Slime7" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(692, 202)
-
-[node name="Slime8" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(464, 197)
-
-[node name="Slime9" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(1076, 77)
-
-[node name="Slime10" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(328, 77)
-
-[node name="Slime" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(1072, 340)
-
-[node name="Slime4" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(114, 85)
-
-[node name="Slime11" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(314, 590)
-
 [node name="Stair" parent="." instance=ExtResource("2_lexaa")]
 visible = false
 position = Vector2(1185, 30)
 
 [node name="Minimap" parent="." instance=ExtResource("5_snpky")]
+
+[node name="EliteOrc" parent="." instance=ExtResource("6_c2rmc")]
+position = Vector2(971, 586)
+minion_scene_path = "res://scenes/enemy.tscn"
+
+[node name="Werewolf" parent="." instance=ExtResource("7_djnuc")]
+position = Vector2(407, 337)
+
+[node name="Werewolf2" parent="." instance=ExtResource("7_djnuc")]
+position = Vector2(775, 333)
+
+[node name="Slime" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(194, 582)
+
+[node name="Slime2" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(419, 94)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_t525o")
+volume_db = -25.037
+autoplay = true
+
+[node name="Skeleton" parent="." instance=ExtResource("10_vcdct")]
+position = Vector2(114, 292)
+
+[node name="Skeleton2" parent="." instance=ExtResource("10_vcdct")]
+position = Vector2(110, 240)
+
+[node name="Skeleton4" parent="." instance=ExtResource("10_vcdct")]
+position = Vector2(167, 266)
+
+[node name="Skeleton3" parent="." instance=ExtResource("10_vcdct")]
+position = Vector2(51, 268)
+
+[node name="Skeleton5" parent="." instance=ExtResource("10_vcdct")]
+position = Vector2(715, 107)
+
+[node name="Skeleton6" parent="." instance=ExtResource("10_vcdct")]
+position = Vector2(711, 55)
+
+[node name="Skeleton7" parent="." instance=ExtResource("10_vcdct")]
+position = Vector2(768, 81)
+
+[node name="Skeleton8" parent="." instance=ExtResource("10_vcdct")]
+position = Vector2(652, 83)
+
+[node name="Skeleton9" parent="." instance=ExtResource("10_vcdct")]
+position = Vector2(689, 612)
+
+[node name="Skeleton10" parent="." instance=ExtResource("10_vcdct")]
+position = Vector2(685, 560)
+
+[node name="Skeleton11" parent="." instance=ExtResource("10_vcdct")]
+position = Vector2(742, 586)
+
+[node name="Skeleton12" parent="." instance=ExtResource("10_vcdct")]
+position = Vector2(626, 588)

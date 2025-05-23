@@ -13,6 +13,9 @@ func _ready() -> void:
     print("Current scene: ", current_scene)
     
     if "Level2" in current_scene:
+        next_level_path = "res://scenes/Level3.tscn"
+        print("Next destination: Level 3")
+    if "Level3" in current_scene:
         next_level_path = "res://scenes/win_screen.tscn"
         print("Next destination: Win Screen")
     else:
