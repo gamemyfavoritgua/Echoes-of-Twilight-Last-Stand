@@ -8,10 +8,18 @@ signal stairs_revealed
 
 # Added to keep track of notification
 var notification_layer = null
+# Added to track if stair is revealed
+var is_revealed = false
 
 func _ready() -> void:
     visible = false
     set_process(false)
+    
+    # Disable all CollisionShape2D in the StaticBody2D
+    for i in range(1, 4):
+        var collision_name = "CollisionShape2D" + (str(i) if i > 1 else "")
+        if has_node(collision_name):
+            get_node(collision_name).disabled = true
     
     if collision_shape:
         collision_shape.disabled = true
@@ -29,6 +37,7 @@ func check_enemies() -> void:
     if enemies.size() == 0:
         reveal_stair()
     else:
+        print("Remaining enemies: ", enemies.size())
         for enemy in enemies:
             if not enemy.is_connected("tree_exiting", Callable(self, "_on_enemy_tree_exiting")):
                 enemy.tree_exiting.connect(_on_enemy_tree_exiting)
@@ -45,13 +54,24 @@ func _on_enemy_tree_exiting() -> void:
     timer.start()
 
 func reveal_stair() -> void:
+    if is_revealed:
+        return
+    
+    is_revealed = true
     visible = true
     
+    # Enable all collision shapes in the StaticBody2D
+    for i in range(1, 4):
+        var collision_name = "CollisionShape2D" + (str(i) if i > 1 else "")
+        if has_node(collision_name):
+            get_node(collision_name).disabled = false
+    
+    # Enable Area2D collision
     if collision_shape:
         collision_shape.disabled = false
     
     collision_area.monitoring = true
-    collision_area.monitorable = false  # Tetap false karena kita hanya ingin mendeteksi player, bukan sebaliknya
+    collision_area.monitorable = false
     
     sprite.scale = Vector2(0.1, 0.1)
     sprite.modulate.a = 0.0

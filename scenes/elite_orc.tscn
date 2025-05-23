@@ -1,6 +1,6 @@
-[gd_scene load_steps=58 format=3 uid="uid://b4f067rodh2wr"]
+[gd_scene load_steps=61 format=3 uid="uid://xggoi65xrsue"]
 
-[ext_resource type="Script" path="res://scripts/enemy/goblin.gd" id="1_e5w0w"]
+[ext_resource type="Script" path="res://scripts/enemy/boss/elite_orc.gd" id="1_gjwnt"]
 [ext_resource type="Texture2D" uid="uid://cx3frim6ah6wj" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Elite Orc/Elite Orc with shadows/Elite Orc-Attack01.png" id="2_k01pi"]
 [ext_resource type="Texture2D" uid="uid://nav33a6h1hbw" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Elite Orc/Elite Orc with shadows/Elite Orc-Attack02.png" id="3_rxv40"]
 [ext_resource type="Texture2D" uid="uid://dcpb24k64adun" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Elite Orc/Elite Orc with shadows/Elite Orc-Death.png" id="4_fv37g"]
@@ -9,11 +9,14 @@
 [ext_resource type="Texture2D" uid="uid://bx68bdv271kc" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Elite Orc/Elite Orc with shadows/Elite Orc-Walk.png" id="7_e8s2h"]
 [ext_resource type="Script" path="res://scripts/enemy/area_trigger.gd" id="8_ipx7q"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="9_k8s0c"]
-[ext_resource type="Script" path="res://scripts/enemy/states/idle.gd" id="10_o07cd"]
-[ext_resource type="Script" path="res://scripts/enemy/states/walk.gd" id="11_7x0mn"]
-[ext_resource type="Script" path="res://scripts/enemy/states/hurt.gd" id="12_af1rg"]
-[ext_resource type="Script" path="res://scripts/enemy/states/death.gd" id="13_7300c"]
-[ext_resource type="Script" path="res://scripts/enemy/states/attack.gd" id="14_1vfia"]
+[ext_resource type="Script" path="res://scripts/enemy/boss/states/idle.gd" id="10_4sh06"]
+[ext_resource type="Script" path="res://scripts/enemy/boss/states/walk.gd" id="11_u1m4d"]
+[ext_resource type="Script" path="res://scripts/enemy/boss/states/hurt.gd" id="12_e4ple"]
+[ext_resource type="Script" path="res://scripts/enemy/boss/states/death.gd" id="13_anarc"]
+[ext_resource type="Script" path="res://scripts/enemy/boss/states/attack.gd" id="14_lydq3"]
+[ext_resource type="Texture2D" uid="uid://c4oi5jb8n8hn8" path="res://assets/HUD Asset/CrimsonFantasyGUI/BossHealthBar/bosshealthbarinside.png" id="15_wu8g6"]
+[ext_resource type="Texture2D" uid="uid://bgceg3tlf7r7s" path="res://assets/HUD Asset/CrimsonFantasyGUI/BossHealthBar/bosshealthbarframe.png" id="16_0tghu"]
+[ext_resource type="Texture2D" uid="uid://bpuioumy0lpt2" path="res://assets/HUD Asset/CrimsonFantasyGUI/BossHealthBar/bosshealthbarprog.png" id="17_gk6ot"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jwxh4"]
 size = Vector2(22, 33)
@@ -337,9 +340,7 @@ radius = 64.0
 [node name="EliteOrc" type="CharacterBody2D" groups=["enemy"]]
 collision_layer = 2
 platform_floor_layers = 4294967294
-script = ExtResource("1_e5w0w")
-speed = 35.0
-max_health = 500.0
+script = ExtResource("1_gjwnt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -6.5)
@@ -365,18 +366,28 @@ shape = SubResource("CircleShape2D_u7sji")
 script = ExtResource("9_k8s0c")
 
 [node name="Idle" type="Node" parent="StateMachine"]
-script = ExtResource("10_o07cd")
+script = ExtResource("10_4sh06")
 
 [node name="Walk" type="Node" parent="StateMachine"]
-script = ExtResource("11_7x0mn")
+script = ExtResource("11_u1m4d")
 
 [node name="Hurt" type="Node" parent="StateMachine"]
-script = ExtResource("12_af1rg")
+script = ExtResource("12_e4ple")
 
 [node name="Death" type="Node" parent="StateMachine"]
-script = ExtResource("13_7300c")
+script = ExtResource("13_anarc")
 
 [node name="Attack" type="Node" parent="StateMachine"]
-script = ExtResource("14_1vfia")
-damage_amount = 15.0
-attack_cooldown = 2.5
+script = ExtResource("14_lydq3")
+
+[node name="BossHealthBar" type="TextureProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -34.0
+offset_top = -45.0
+offset_right = 35.0
+offset_bottom = -5.0
+max_value = 500.0
+value = 500.0
+texture_under = ExtResource("15_wu8g6")
+texture_over = ExtResource("16_0tghu")
+texture_progress = ExtResource("17_gk6ot")
