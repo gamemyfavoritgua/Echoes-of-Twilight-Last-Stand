@@ -10,6 +10,7 @@ signal health_change
 @onready var animation_player = $AnimatedSprite2D
 @onready var attack_area = $AttackRange
 @onready var damage_amount = attack_area.damage_amount
+@onready var heal_sfx_stream = preload("res://assets/Sound Asset/sfx/rune-pickup.mp3")
 
 var direction: Vector2 = Vector2(1, 0)
 var heal_sfx = AudioStreamPlayer
@@ -50,11 +51,11 @@ func buff(stat):
     damage_amount += stat
 
 func heal(amount: int):
-    heal_sfx = AudioStreamPlayer.new()
-    heal_sfx.stream = load("res://assets/Sound Asset/sfx/rune-pickup.mp3")
-    add_child(heal_sfx)
-    heal_sfx.play()
-    await get_tree().create_timer(1.5).timeout
-    heal_sfx.queue_free()
-    health = min(health + amount, max_health)
-    health_change.emit()
+	health = min(health + amount, max_health)
+	health_change.emit()
+	heal_sfx = AudioStreamPlayer.new()
+	heal_sfx.stream = heal_sfx_stream
+	add_child(heal_sfx)
+	heal_sfx.play()
+	await get_tree().create_timer(1.5).timeout
+	heal_sfx.queue_free()
