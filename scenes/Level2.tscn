@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://j70823pox1xi"]
+[gd_scene load_steps=10 format=3 uid="uid://j70823pox1xi"]
 
 [ext_resource type="PackedScene" uid="uid://dq2sumkymjrtc" path="res://scenes/tile_map.tscn" id="1_d8hgd"]
 [ext_resource type="Script" path="res://scripts/ui/level1.gd" id="1_f247c"]
+[ext_resource type="Script" path="res://scripts/pause_manager.gd" id="3_dx1ka"]
 [ext_resource type="PackedScene" uid="uid://n1yynmtvu0tx" path="res://scenes/Stair.tscn" id="3_lhvsn"]
 [ext_resource type="PackedScene" uid="uid://cwrihh041gydy" path="res://scenes/skeleton.tscn" id="3_unoyk"]
 [ext_resource type="AudioStream" uid="uid://vavttiel8ta2" path="res://assets/Sound Asset/Level2.wav" id="4_mg2rv"]
@@ -13,6 +14,13 @@
 script = ExtResource("1_f247c")
 
 [node name="TileMap1" parent="." instance=ExtResource("1_d8hgd")]
+
+[node name="PauseManager" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_dx1ka")
 
 [node name="Skeleton2" parent="." instance=ExtResource("3_unoyk")]
 position = Vector2(215, 367)
