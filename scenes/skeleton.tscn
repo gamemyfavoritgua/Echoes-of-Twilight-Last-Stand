@@ -305,6 +305,7 @@ platform_floor_layers = 4294967294
 script = ExtResource("1_l28oo")
 speed = 75.0
 max_health = 40.0
+item_scene_path = "res://scenes/rune_health.tscn"
 drop_chance = 0.33
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -3,6 +3,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time
 func _ready():
+	MusicPalyer.stop_music()
 	# Get the character scene path based on the player's selection
 	var character_scene_path = GameData.get_selected_character_scene()
 	

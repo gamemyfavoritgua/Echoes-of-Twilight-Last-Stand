@@ -38,6 +38,5 @@ scene_to_load = "main_menu"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_6w4mo")
 volume_db = -25.037
-autoplay = true
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/LinkButton" to="HBoxContainer/VBoxContainer/LinkButton" method="_on_Main_Menu_pressed"]
