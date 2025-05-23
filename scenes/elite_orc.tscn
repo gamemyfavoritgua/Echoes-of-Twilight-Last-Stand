@@ -340,6 +340,7 @@ platform_floor_layers = 4294967294
 script = ExtResource("1_e5w0w")
 speed = 35.0
 max_health = 500.0
+item_scene_path = "res://scenes/rune_health.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -6.5)
