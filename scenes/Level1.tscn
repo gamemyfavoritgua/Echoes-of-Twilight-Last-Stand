@@ -3,10 +3,8 @@
 [ext_resource type="Script" path="res://scripts/ui/level1.gd" id="1_rx8vr"]
 [ext_resource type="PackedScene" uid="uid://o60smglc68yx" path="res://scenes/tile_map_1.tscn" id="1_twshx"]
 [ext_resource type="PackedScene" uid="uid://x0jndsnsbqj0" path="res://scenes/enemy.tscn" id="3_04sec"]
-
+[ext_resource type="PackedScene" uid="uid://n1yynmtvu0tx" path="res://scenes/Stair.tscn" id="4_m5kgg"]
 [ext_resource type="AudioStream" uid="uid://bsb4oqmvskg1l" path="res://assets/Sound Asset/level1dungeon.wav" id="5_yorjc"]
-[ext_resource type="PackedScene" path="res://scenes/Stair.tscn" id="4_m5kgg"]
-
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_rx8vr")
