@@ -17,13 +17,13 @@ script = ExtResource("1_rx8vr")
 position = Vector2(780, 186)
 
 [node name="Enemy5" parent="." instance=ExtResource("3_04sec")]
-position = Vector2(312, 175)
+position = Vector2(428, 186)
 
 [node name="Enemy6" parent="." instance=ExtResource("3_04sec")]
-position = Vector2(127, 480)
+position = Vector2(20, 539)
 
 [node name="Enemy7" parent="." instance=ExtResource("3_04sec")]
-position = Vector2(654, 365)
+position = Vector2(651, 402)
 
 [node name="Stair" parent="." instance=ExtResource("4_m5kgg")]
 visible = false
@@ -38,6 +38,15 @@ autoplay = true
 position = Vector2(214, 336)
 
 [node name="Slime2" parent="." instance=ExtResource("6_yrc01")]
-position = Vector2(1016, 447)
+position = Vector2(1043, 299)
 
 [node name="Minimap" parent="." instance=ExtResource("7_povmt")]
+
+[node name="Slime3" parent="." instance=ExtResource("6_yrc01")]
+position = Vector2(510, 647)
+
+[node name="Slime4" parent="." instance=ExtResource("6_yrc01")]
+position = Vector2(592, 33)
+
+[node name="Enemy8" parent="." instance=ExtResource("3_04sec")]
+position = Vector2(1129, 655)

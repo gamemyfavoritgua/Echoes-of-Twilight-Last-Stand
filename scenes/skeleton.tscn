@@ -303,8 +303,9 @@ radius = 64.0
 collision_layer = 2
 platform_floor_layers = 4294967294
 script = ExtResource("1_l28oo")
-speed = 65.0
+speed = 75.0
 max_health = 40.0
+drop_chance = 0.33
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 0.5)
@@ -343,5 +344,5 @@ script = ExtResource("13_8spek")
 
 [node name="Attack" type="Node" parent="StateMachine"]
 script = ExtResource("14_6o8pi")
-damage_amount = 4.0
-attack_cooldown = 0.5
+damage_amount = 3.0
+attack_cooldown = 0.25
