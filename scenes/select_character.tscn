@@ -1,15 +1,18 @@
-[gd_scene load_steps=11 format=3 uid="uid://dwp5sf66jbcb5"]
+[gd_scene load_steps=13 format=3 uid="uid://dwp5sf66jbcb5"]
 
 [ext_resource type="Script" path="res://scripts/ui/select_character.gd" id="1_sqiqa"]
-[ext_resource type="Texture2D" uid="uid://c5tksqd7gdxet" path="res://assets/Picture Asset/maIn menu.png" id="1_wcoqk"]
-[ext_resource type="FontFile" uid="uid://cs0w4uwwpf5j0" path="res://assets/Font Asset/DungeonFont.ttf" id="2_50t86"]
 [ext_resource type="Texture2D" uid="uid://dvjd14lv3a655" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Idle.png" id="2_aeq26"]
+[ext_resource type="Texture2D" uid="uid://dbwbwfvu3jlxi" path="res://assets/Picture Asset/Choose character-2.png" id="2_ip06w"]
 [ext_resource type="Texture2D" uid="uid://dpkcitpartvfl" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Wizard/Wizard/Wizard-Idle.png" id="3_kt41l"]
+[ext_resource type="FontFile" uid="uid://b7pjd3bk5ipv1" path="res://assets/Font Asset/dwarvenaxe-bb-w00-regular.ttf" id="3_s8f8f"]
 [ext_resource type="Texture2D" uid="uid://546rbmcx3jqj" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight Templar/Knight Templar/Knight Templar-Idle.png" id="4_0a7ew"]
+[ext_resource type="FontFile" uid="uid://fnpxkalvu07v" path="res://assets/Font Asset/DUNGRG__.TTF" id="7_rsu40"]
+[ext_resource type="Script" path="res://scripts/menu_button.gd" id="8_qcafc"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jammn"]
-font = ExtResource("2_50t86")
-font_size = 50
+font = ExtResource("3_s8f8f")
+font_size = 75
+font_color = Color(0.670588, 0.670588, 0.52549, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pttpx"]
 atlas = ExtResource("2_aeq26")
@@ -36,7 +39,7 @@ knight_scene = "res://scenes/Level1.tscn"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 2
-texture = ExtResource("1_wcoqk")
+texture = ExtResource("2_ip06w")
 expand_mode = 3
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
@@ -54,6 +57,9 @@ alignment = 1
 
 [node name="Label" type="Label" parent="HBoxContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.670588, 0.670588, 0.52549, 1)
+theme_override_fonts/font = ExtResource("3_s8f8f")
+theme_override_font_sizes/font_size = 0
 text = "Select Your Character
 "
 label_settings = SubResource("LabelSettings_jammn")
@@ -82,3 +88,18 @@ custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 texture = SubResource("AtlasTexture_mjl0j")
 stretch_mode = 4
+
+[node name="LinkButton" type="LinkButton" parent="."]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_pressed_color = Color(0.631373, 0.501961, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(0.631373, 0.501961, 0.482353, 1)
+theme_override_fonts/font = ExtResource("7_rsu40")
+theme_override_font_sizes/font_size = 30
+text = "  Back to Main Menu"
+underline = 2
+script = ExtResource("8_qcafc")
+scene_to_load = "main_menu"
+
+[connection signal="pressed" from="LinkButton" to="LinkButton" method="_on_Main_Menu_pressed"]
