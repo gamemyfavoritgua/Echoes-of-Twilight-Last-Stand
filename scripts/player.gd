@@ -51,11 +51,11 @@ func buff(stat):
     damage_amount += stat
 
 func heal(amount: int):
-	health = min(health + amount, max_health)
-	health_change.emit()
-	heal_sfx = AudioStreamPlayer.new()
-	heal_sfx.stream = heal_sfx_stream
-	add_child(heal_sfx)
-	heal_sfx.play()
-	await get_tree().create_timer(1.5).timeout
-	heal_sfx.queue_free()
+    health = min(health + amount, max_health)
+    health_change.emit()
+    heal_sfx = AudioStreamPlayer.new()
+    heal_sfx.stream = heal_sfx_stream
+    add_child(heal_sfx)
+    heal_sfx.play()
+    await get_tree().create_timer(1.5).timeout
+    heal_sfx.queue_free()

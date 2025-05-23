@@ -34,7 +34,6 @@ position = Vector2(20, 539)
 position = Vector2(655, 450)
 
 [node name="Stair" parent="." instance=ExtResource("4_m5kgg")]
-visible = false
 position = Vector2(1183, 29)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
