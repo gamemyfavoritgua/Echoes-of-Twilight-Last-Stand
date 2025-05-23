@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=3 uid="uid://cyjj7lufws08d"]
+[gd_scene load_steps=69 format=3 uid="uid://cyjj7lufws08d"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_0pakq"]
 [ext_resource type="Texture2D" uid="uid://s8n8c4aeh6r1" path="res://assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Knight Templar/Knight Templar with shadows/Knight Templar.png" id="2_iu5hu"]
@@ -15,7 +15,6 @@
 [ext_resource type="Script" path="res://scripts/states/walk.gd" id="12_f17g8"]
 [ext_resource type="Texture2D" uid="uid://ca1skdd6vf57o" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarprogress4.png" id="13_4p2bu"]
 [ext_resource type="Script" path="res://scripts/states/attack.gd" id="13_n0xke"]
-[ext_resource type="PackedScene" uid="uid://e0ce8ldkh148" path="res://scenes/twilight.tscn" id="14_hibon"]
 [ext_resource type="Script" path="res://scripts/health_bar.gd" id="14_rulro"]
 [ext_resource type="Texture2D" uid="uid://d0enjvodcn35f" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarframe2.png" id="15_feljv"]
 
@@ -459,9 +458,6 @@ script = ExtResource("9_0gpfd")
 
 [node name="Death" type="Node" parent="StateMachine"]
 script = ExtResource("10_x7aoq")
-
-[node name="Twilight" parent="." instance=ExtResource("14_hibon")]
-fill_duration_sec = 17.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
