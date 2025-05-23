@@ -372,4 +372,4 @@ script = ExtResource("13_18on7")
 [node name="Attack" type="Node" parent="StateMachine"]
 script = ExtResource("14_sitw0")
 damage_amount = 20.0
-attack_cooldown = 3.0
+attack_cooldown = 2.5

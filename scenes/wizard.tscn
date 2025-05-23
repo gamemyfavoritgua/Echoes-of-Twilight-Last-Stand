@@ -21,7 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://d0enjvodcn35f" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarframe2.png" id="15_uocxq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0qst4"]
-size = Vector2(31.5, 22)
+size = Vector2(20, 22)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y87xu"]
 atlas = ExtResource("2_1yqmw")
@@ -403,7 +403,7 @@ health = 325.0
 max_health = 325.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -1)
+position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_0qst4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

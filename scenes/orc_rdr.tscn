@@ -325,7 +325,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_u7sji"]
-radius = 64.0
+radius = 75.0
 
 [node name="OrcRider" type="CharacterBody2D" groups=["enemy"]]
 collision_layer = 2
@@ -371,6 +371,6 @@ script = ExtResource("13_hkd0s")
 
 [node name="Attack" type="Node" parent="StateMachine"]
 script = ExtResource("14_fbdwn")
-attack_range = 30.0
+attack_range = 35.0
 damage_amount = 20.0
 attack_cooldown = 2.5
