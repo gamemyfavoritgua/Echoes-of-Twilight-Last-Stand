@@ -43,13 +43,13 @@ autoplay = true
 position = Vector2(23, 649)
 
 [node name="Werewolf2" parent="." instance=ExtResource("6_mxdc6")]
-position = Vector2(384, 108)
+position = Vector2(341, 110)
 
 [node name="Werewolf3" parent="." instance=ExtResource("6_mxdc6")]
 position = Vector2(1117, 640)
 
 [node name="Werewolf4" parent="." instance=ExtResource("6_mxdc6")]
-position = Vector2(768, 115)
+position = Vector2(792, 115)
 
 [node name="Minimap" parent="." instance=ExtResource("7_xkat6")]
 
