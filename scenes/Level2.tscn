@@ -4,10 +4,10 @@
 [ext_resource type="Script" path="res://scripts/ui/level1.gd" id="1_f247c"]
 [ext_resource type="Script" path="res://scripts/pause_manager.gd" id="3_dx1ka"]
 [ext_resource type="PackedScene" uid="uid://n1yynmtvu0tx" path="res://scenes/Stair.tscn" id="3_lhvsn"]
-[ext_resource type="PackedScene" path="res://scenes/skeleton.tscn" id="3_unoyk"]
+[ext_resource type="PackedScene" uid="uid://cwrihh041gydy" path="res://scenes/skeleton.tscn" id="3_unoyk"]
 [ext_resource type="AudioStream" uid="uid://vavttiel8ta2" path="res://assets/Sound Asset/Level2.wav" id="4_mg2rv"]
-[ext_resource type="PackedScene" path="res://scenes/werewolf.tscn" id="6_mxdc6"]
-[ext_resource type="PackedScene" path="res://scenes/minimap.tscn" id="7_xkat6"]
+[ext_resource type="PackedScene" uid="uid://ya8i3thoeqwe" path="res://scenes/werewolf.tscn" id="6_mxdc6"]
+[ext_resource type="PackedScene" uid="uid://bfx5evjuxj4v" path="res://scenes/minimap.tscn" id="7_xkat6"]
 [ext_resource type="PackedScene" uid="uid://b8q4i4x1ebyqd" path="res://scenes/orc_rdr.tscn" id="8_03dtq"]
 
 [node name="Level2" type="Node2D"]
@@ -39,7 +39,6 @@ position = Vector2(188, 402)
 position = Vector2(189, 327)
 
 [node name="Stair" parent="." instance=ExtResource("3_lhvsn")]
-visible = false
 position = Vector2(1186, 31)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
