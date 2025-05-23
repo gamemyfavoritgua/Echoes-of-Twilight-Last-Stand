@@ -402,7 +402,7 @@ radius = 30.0
 [node name="Templar" type="CharacterBody2D" groups=["Player"]]
 collision_mask = 3
 script = ExtResource("1_0pakq")
-speed = 150.0
+speed = 132.0
 health = 375.0
 max_health = 375.0
 
@@ -423,7 +423,7 @@ collision_layer = 0
 collision_mask = 2
 script = ExtResource("9_54luo")
 player = NodePath("..")
-damage_amount = 30.0
+damage_amount = 27.5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange"]
 shape = SubResource("CircleShape2D_ga8s7")

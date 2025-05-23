@@ -21,7 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://d0enjvodcn35f" path="res://assets/HUD Asset/CrimsonFantasyGUI/SoloHealthBar/healthbarframe2.png" id="15_uocxq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0qst4"]
-size = Vector2(31.5, 22)
+size = Vector2(20, 22)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y87xu"]
 atlas = ExtResource("2_1yqmw")
@@ -398,12 +398,12 @@ radius = 50.3587
 [node name="Wizard" type="CharacterBody2D" groups=["Player"]]
 collision_mask = 3
 script = ExtResource("1_rwwew")
-speed = 215.0
-health = 300.0
-max_health = 300.0
+speed = 237.0
+health = 325.0
+max_health = 325.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -1)
+position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_0qst4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -420,7 +420,7 @@ collision_layer = 0
 collision_mask = 2
 script = ExtResource("9_j2ow6")
 player = NodePath("..")
-damage_amount = 20.0
+damage_amount = 30.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange"]
 shape = SubResource("CircleShape2D_ga8s7")

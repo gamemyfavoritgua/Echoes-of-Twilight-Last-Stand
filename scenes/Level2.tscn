@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://j70823pox1xi"]
+[gd_scene load_steps=9 format=3 uid="uid://j70823pox1xi"]
 
 [ext_resource type="PackedScene" uid="uid://dq2sumkymjrtc" path="res://scenes/tile_map.tscn" id="1_d8hgd"]
 [ext_resource type="Script" path="res://scripts/ui/level1.gd" id="1_f247c"]
@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://vavttiel8ta2" path="res://assets/Sound Asset/Level2.wav" id="4_mg2rv"]
 [ext_resource type="PackedScene" uid="uid://ya8i3thoeqwe" path="res://scenes/werewolf.tscn" id="6_mxdc6"]
 [ext_resource type="PackedScene" uid="uid://bfx5evjuxj4v" path="res://scenes/minimap.tscn" id="7_xkat6"]
+[ext_resource type="PackedScene" uid="uid://qc4173fxldln" path="res://scenes/orc_rdr.tscn" id="8_03dtq"]
 
 [node name="Level2" type="Node2D"]
 script = ExtResource("1_f247c")
@@ -14,19 +15,20 @@ script = ExtResource("1_f247c")
 [node name="TileMap1" parent="." instance=ExtResource("1_d8hgd")]
 
 [node name="Skeleton2" parent="." instance=ExtResource("3_unoyk")]
-position = Vector2(377, 343)
+position = Vector2(215, 367)
 
 [node name="Skeleton3" parent="." instance=ExtResource("3_unoyk")]
-position = Vector2(963, 168)
+position = Vector2(934, 363)
+rotation = 0.261799
 
 [node name="Skeleton4" parent="." instance=ExtResource("3_unoyk")]
-position = Vector2(579, 161)
+position = Vector2(155, 365)
 
 [node name="Skeleton7" parent="." instance=ExtResource("3_unoyk")]
-position = Vector2(187, 541)
+position = Vector2(188, 402)
 
 [node name="Skeleton9" parent="." instance=ExtResource("3_unoyk")]
-position = Vector2(960, 533)
+position = Vector2(189, 327)
 
 [node name="Stair" parent="." instance=ExtResource("3_lhvsn")]
 visible = false
@@ -38,21 +40,66 @@ volume_db = -25.037
 autoplay = true
 
 [node name="Werewolf" parent="." instance=ExtResource("6_mxdc6")]
-position = Vector2(220, 383)
+position = Vector2(23, 649)
 
 [node name="Werewolf2" parent="." instance=ExtResource("6_mxdc6")]
-position = Vector2(397, 547)
+position = Vector2(341, 110)
 
 [node name="Werewolf3" parent="." instance=ExtResource("6_mxdc6")]
-position = Vector2(577, 356)
+position = Vector2(1117, 640)
 
 [node name="Werewolf4" parent="." instance=ExtResource("6_mxdc6")]
-position = Vector2(996, 356)
-
-[node name="Werewolf5" parent="." instance=ExtResource("6_mxdc6")]
-position = Vector2(778, 544)
-
-[node name="Werewolf6" parent="." instance=ExtResource("6_mxdc6")]
-position = Vector2(379, 165)
+position = Vector2(792, 115)
 
 [node name="Minimap" parent="." instance=ExtResource("7_xkat6")]
+
+[node name="Skeleton5" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(984, 362)
+
+[node name="Skeleton6" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(958, 330)
+
+[node name="Skeleton8" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(962, 393)
+
+[node name="OrcRider" parent="." instance=ExtResource("8_03dtq")]
+position = Vector2(574, 535)
+
+[node name="Skeleton10" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(570, 471)
+
+[node name="Skeleton11" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(530, 470)
+
+[node name="Skeleton12" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(611, 471)
+
+[node name="Skeleton13" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(500, 528)
+
+[node name="Skeleton14" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(500, 559)
+
+[node name="Skeleton15" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(502, 498)
+
+[node name="Skeleton16" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(646, 528)
+
+[node name="Skeleton17" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(646, 559)
+
+[node name="Skeleton18" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(648, 498)
+
+[node name="Skeleton19" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(569, 591)
+
+[node name="Skeleton20" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(529, 590)
+
+[node name="Skeleton21" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(610, 591)
+
+[node name="Werewolf5" parent="." instance=ExtResource("6_mxdc6")]
+position = Vector2(576, 206)
