@@ -396,12 +396,12 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ga8s7"]
-radius = 30.0
+radius = 26.0192
 
 [node name="Templar" type="CharacterBody2D" groups=["Player"]]
 collision_mask = 3
 script = ExtResource("1_0pakq")
-speed = 132.0
+speed = 127.0
 health = 375.0
 max_health = 375.0
 
