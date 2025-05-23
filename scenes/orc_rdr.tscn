@@ -331,8 +331,8 @@ radius = 75.0
 collision_layer = 2
 platform_floor_layers = 4294967294
 script = ExtResource("1_kt7of")
-speed = 35.0
-max_health = 250.0
+speed = 37.0
+max_health = 300.0
 item_scene_path = "res://scenes/rune_health.tscn"
 drop_chance = 1.0
 
@@ -372,5 +372,5 @@ script = ExtResource("13_hkd0s")
 [node name="Attack" type="Node" parent="StateMachine"]
 script = ExtResource("14_fbdwn")
 attack_range = 35.0
-damage_amount = 20.0
+damage_amount = 23.0
 attack_cooldown = 2.5

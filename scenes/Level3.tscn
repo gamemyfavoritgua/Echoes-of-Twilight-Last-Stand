@@ -40,10 +40,10 @@ position = Vector2(407, 337)
 position = Vector2(775, 333)
 
 [node name="Slime" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(194, 582)
+position = Vector2(103, 581)
 
 [node name="Slime2" parent="." instance=ExtResource("2_5m6id")]
-position = Vector2(419, 94)
+position = Vector2(335, 77)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("9_t525o")
@@ -57,7 +57,7 @@ position = Vector2(114, 292)
 position = Vector2(110, 240)
 
 [node name="Skeleton4" parent="." instance=ExtResource("10_vcdct")]
-position = Vector2(167, 266)
+position = Vector2(170, 268)
 
 [node name="Skeleton3" parent="." instance=ExtResource("10_vcdct")]
 position = Vector2(51, 268)
@@ -85,3 +85,6 @@ position = Vector2(742, 586)
 
 [node name="Skeleton12" parent="." instance=ExtResource("10_vcdct")]
 position = Vector2(626, 588)
+
+[node name="Slime3" parent="." instance=ExtResource("2_5m6id")]
+position = Vector2(1054, 338)

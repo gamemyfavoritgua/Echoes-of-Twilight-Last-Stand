@@ -110,3 +110,15 @@ position = Vector2(610, 591)
 
 [node name="Werewolf5" parent="." instance=ExtResource("6_mxdc6")]
 position = Vector2(576, 206)
+
+[node name="Skeleton22" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(601, 64)
+
+[node name="Skeleton23" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(541, 62)
+
+[node name="Skeleton24" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(574, 99)
+
+[node name="Skeleton25" parent="." instance=ExtResource("3_unoyk")]
+position = Vector2(575, 24)
